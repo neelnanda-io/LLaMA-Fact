@@ -18,7 +18,14 @@ random.seed(SEED)
 torch.set_grad_enabled(False)
 
 hf_model = AutoModelForCausalLM.from_pretrained("decapoda-research/llama-7b-hf")
-model: HookedTransformer = HookedTransformer.from_pretrained("llama-7b", hf_model=hf_model, tokenizer=tokenizer)
+
+cfg = loading.get_pretrained_model_config("llama-7b")
+model = HookedTransformer(cfg, tokenizer=tokenizer)
+state_dict = loading.get_pretrained_state_dict("llama-7b", cfg, hf_model)
+model.load_state_dict(state_dict, strict=False)
+
+
+# model: HookedTransformer = HookedTransformer.from_pretrained_no_processing("llama-7b", hf_model=hf_model, tokenizer=tokenizer, device="cpu")
 n_layers = model.cfg.n_layers
 d_model = model.cfg.d_model
 n_heads = model.cfg.n_heads
@@ -26,7 +33,7 @@ d_head = model.cfg.d_head
 d_mlp = model.cfg.d_mlp
 d_vocab = model.cfg.d_vocab
 # %%
-evals.sanity_check(model)
+print(evals.sanity_check(model))
 # %%
 for layer in range(n_layers):
     model.blocks[layer].attn.W_K[:] = model.blocks[layer].attn.W_K * model.blocks[layer].ln1.w[None, :, None]
@@ -36,9 +43,17 @@ for layer in range(n_layers):
     model.blocks[layer].mlp.W_in[:] = model.blocks[layer].mlp.W_in * model.blocks[layer].ln2.w[:, None]
     model.blocks[layer].mlp.W_gate[:] = model.blocks[layer].mlp.W_gate * model.blocks[layer].ln2.w[:, None]
     model.blocks[layer].ln2.w[:] = torch.ones_like(model.blocks[layer].ln2.w)
+    
+    model.blocks[layer].mlp.b_out[:] = model.blocks[layer].mlp.b_out + model.blocks[layer].mlp.b_in @ model.blocks[layer].mlp.W_out
+    model.blocks[layer].mlp.b_in[:] = 0.
+
+    model.blocks[layer].attn.b_O[:] = model.blocks[layer].attn.b_O[:] + (model.blocks[layer].attn.b_V[:, :, None] * model.blocks[layer].attn.W_O).sum([0, 1])
+    model.blocks[layer].attn.b_V[:] = 0.
 
 model.unembed.W_U[:] = model.unembed.W_U * model.ln_final.w[:, None]
+model.unembed.W_U[:] = model.unembed.W_U - model.unembed.W_U.mean(-1, keepdim=True)
 model.ln_final.w[:] = torch.ones_like(model.ln_final.w)
+print(evals.sanity_check(model))
 # %%
 model.generate("The capital of Germany is", max_new_tokens=20, temperature=0)
 
@@ -46,7 +61,7 @@ model.generate("The capital of Germany is", max_new_tokens=20, temperature=0)
 def decode_single_token(integer):
     # To recover whether the tokens begins with a space, we need to prepend a token to avoid weird start of string behaviour
     return tokenizer.decode([891, integer])[1:]
-def to_str_tokens(tokens):
+def to_str_tokens(tokens, prepend_bos=True):
     if isinstance(tokens, str):
         tokens = to_tokens(tokens)
     if isinstance(tokens, torch.Tensor):
@@ -54,7 +69,11 @@ def to_str_tokens(tokens):
             assert tokens.shape[0]==1
             tokens = tokens[0]
         tokens = tokens.tolist()
-    return [decode_single_token(token) for token in tokens]
+    if prepend_bos:
+        return [decode_single_token(token) for token in tokens]
+    else:
+        return [decode_single_token(token) for token in tokens[1:]]
+
 def to_string(tokens):
     if isinstance(tokens, torch.Tensor):
         if len(tokens.shape)==2:
@@ -247,4 +266,38 @@ jordan_resid_stack, jordan_resid_labels = cache.get_full_resid_decomposition(lay
 line([jordan_resid_stack @ win, jordan_resid_stack @ w_gate], line_labels=["in", "gate"], x=jordan_resid_labels)
 jordan_resid_stack, jordan_resid_labels = cache.get_full_resid_decomposition(layer, mlp_input=True, expand_neurons=False, pos_slice=4, return_labels=True, apply_ln=True)
 line([jordan_resid_stack @ win, jordan_resid_stack @ w_gate], line_labels=["in", "gate"], x=jordan_resid_labels)
+# %%
+
+
+
+top_facts_df = pd.read_csv("top_facts_df.csv", index_col=0)
+top_facts_df = top_facts_df.reset_index()
+top_facts_df.num_athlete_tokens = [len(to_str_tokens(" "+athlete, prepend_bos=False)) for athlete in top_facts_df.athlete]
+top_facts_df.num_athlete_tokens.value_counts()
+# %%
+def pad_to_length(tokens, length):
+    long_tokens = torch.zeros(length, dtype=torch.long, device=tokens.device) + tokenizer.pad_token_id
+    long_tokens[:len(tokens)] = tokens
+    return long_tokens
+top_facts_df['zero_shot_prompt'] = top_facts_df.apply(lambda row: f"Fact: {row.athlete} plays the sport of", axis=1)
+athlete_tokens = torch.stack([pad_to_length(to_tokens(x), 16 - 6) for x in top_facts_df.query('num_athlete_tokens<=3').zero_shot_prompt.values.tolist()]).cpu()
+final_index = torch.tensor([len(to_tokens(x)) for x in top_facts_df.query('num_athlete_tokens<=3').zero_shot_prompt.values.tolist()]).cpu() - 1
+subject_index = final_index - 4
+print(athlete_tokens[np.arange(len(top_facts_df.query('num_athlete_tokens<=3'))), final_index][:10])
+print(athlete_tokens[np.arange(len(top_facts_df.query('num_athlete_tokens<=3'))), subject_index][:10])
+# %%
+top_facts_df.query('num_athlete_tokens==2').sport.value_counts()
+# %%
+batch_size = 16
+cache_list = []
+logits_list = []
+for i in tqdm.trange(0, len(athlete_tokens), batch_size):
+    tokens = athlete_tokens[i:i+batch_size]
+    logits, cache = model.run_with_cache(tokens, device='cpu')
+    cache_list.append(cache)
+    logits_list.append(logits.cpu())
+all_logits = torch.cat(logits_list)
+all_cache = ActivationCache({
+    k: torch.cat([c[k] for c in cache_list], dim=0) for k in cache_list[0].cache_dict
+}, model)
 # %%
