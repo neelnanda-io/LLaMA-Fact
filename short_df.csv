@@ -1,0 +1,1155 @@
+,index,athlete,sport,log_prob_one_shot,num_athlete_tokens,sport_index,sport_token,prompt,zero_shot_prompt,clp
+1,738,Walter Payton,football,-0.105713695,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Walter Payton plays the sport of",Fact: Walter Payton plays the sport of,-0.36328125
+3,14501,Kevin Millwood,baseball,-0.37297902,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Kevin Millwood plays the sport of",Fact: Kevin Millwood plays the sport of,-0.625
+5,16887,Mitch Haniger,baseball,-0.116976544,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Mitch Haniger plays the sport of",Fact: Mitch Haniger plays the sport of,-0.2890625
+6,1371,Landon Collins,football,-0.20103402,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Landon Collins plays the sport of",Fact: Landon Collins plays the sport of,-0.2890625
+10,1046,Michael Floyd,football,-0.176301,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Michael Floyd plays the sport of",Fact: Michael Floyd plays the sport of,-0.40625
+13,6347,Mario Chalmers,basketball,-0.18286932,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Mario Chalmers plays the sport of",Fact: Mario Chalmers plays the sport of,-0.2353515625
+18,1559,Andrew Norwell,football,-0.51362664,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Andrew Norwell plays the sport of",Fact: Andrew Norwell plays the sport of,-0.90234375
+21,9805,Nick Nurse,basketball,-0.36894998,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Nick Nurse plays the sport of",Fact: Nick Nurse plays the sport of,-0.58203125
+22,511,Jason Garrett,football,-0.18991424,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jason Garrett plays the sport of",Fact: Jason Garrett plays the sport of,-0.69140625
+23,1641,Kyler Murray,football,-0.120549105,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Kyler Murray plays the sport of",Fact: Kyler Murray plays the sport of,-0.62890625
+26,1663,Kelvin Benjamin,football,-0.14182977,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Kelvin Benjamin plays the sport of",Fact: Kelvin Benjamin plays the sport of,-0.5
+27,814,Landry Jones,football,-0.49076635,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Landry Jones plays the sport of",Fact: Landry Jones plays the sport of,-0.640625
+39,332,Alex Smith,football,-0.5479572,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Alex Smith plays the sport of",Fact: Alex Smith plays the sport of,-0.5
+47,1352,Jay Gruden,football,-0.11426395,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jay Gruden plays the sport of",Fact: Jay Gruden plays the sport of,-1.2109375
+51,5382,Chris Kaman,basketball,-0.07861099,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Chris Kaman plays the sport of",Fact: Chris Kaman plays the sport of,-0.84375
+52,328,John Fox,football,-0.3106938,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: John Fox plays the sport of",Fact: John Fox plays the sport of,-1.46875
+53,1072,Nick Foles,football,-0.15133388,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Nick Foles plays the sport of",Fact: Nick Foles plays the sport of,-0.5546875
+54,6612,Michael Jordan,basketball,-0.039785385,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Michael Jordan plays the sport of",Fact: Michael Jordan plays the sport of,-0.369140625
+58,658,Deion Branch,football,-0.23190187,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Deion Branch plays the sport of",Fact: Deion Branch plays the sport of,-1.1328125
+67,12068,Eric Moreland,basketball,-0.15528493,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Eric Moreland plays the sport of",Fact: Eric Moreland plays the sport of,-0.64453125
+68,1802,Corey Davis,football,-0.69585836,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Corey Davis plays the sport of",Fact: Corey Davis plays the sport of,-0.466796875
+69,5882,Isiah Thomas,basketball,-0.09153662,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Isiah Thomas plays the sport of",Fact: Isiah Thomas plays the sport of,-0.357421875
+70,14498,Gary Carter,baseball,-0.16059817,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Gary Carter plays the sport of",Fact: Gary Carter plays the sport of,-0.2890625
+72,466,Matt Cassel,football,-0.56781006,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Cassel plays the sport of",Fact: Matt Cassel plays the sport of,-0.68359375
+75,1868,Josh Allen,football,-0.11613362,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Allen plays the sport of",Fact: Josh Allen plays the sport of,-0.37890625
+78,1540,Aaron Donald,football,-0.0762047,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Aaron Donald plays the sport of",Fact: Aaron Donald plays the sport of,-0.2353515625
+79,518,Ron Rivera,football,-0.14325847,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ron Rivera plays the sport of",Fact: Ron Rivera plays the sport of,-1.6484375
+81,16728,Sonny Gray,baseball,-0.21652475,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Sonny Gray plays the sport of",Fact: Sonny Gray plays the sport of,-0.283203125
+82,5351,Derrick Rose,basketball,-0.037045836,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Derrick Rose plays the sport of",Fact: Derrick Rose plays the sport of,-0.158203125
+83,901,Lamar Miller,football,-0.22988445,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Lamar Miller plays the sport of",Fact: Lamar Miller plays the sport of,-0.421875
+84,15815,Justin Turner,baseball,-0.3149497,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Justin Turner plays the sport of",Fact: Justin Turner plays the sport of,-0.431640625
+87,160,John Elway,football,-0.091521285,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: John Elway plays the sport of",Fact: John Elway plays the sport of,-1.09375
+91,5828,Manute Bol,basketball,-0.18883283,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Manute Bol plays the sport of",Fact: Manute Bol plays the sport of,-0.41015625
+92,702,Julius Thomas,football,-0.3164595,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Julius Thomas plays the sport of",Fact: Julius Thomas plays the sport of,-0.494140625
+97,6447,Al Horford,basketball,-0.055772353,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Al Horford plays the sport of",Fact: Al Horford plays the sport of,-0.306640625
+102,441,Matt Bryant,football,-0.618275,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Bryant plays the sport of",Fact: Matt Bryant plays the sport of,-1.8515625
+105,5330,Dennis Rodman,basketball,-0.25069952,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Dennis Rodman plays the sport of",Fact: Dennis Rodman plays the sport of,-0.25390625
+106,994,Ryan Kalil,football,-0.23966192,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ryan Kalil plays the sport of",Fact: Ryan Kalil plays the sport of,-0.76171875
+109,14180,Carlos Correa,baseball,-0.047304805,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Carlos Correa plays the sport of",Fact: Carlos Correa plays the sport of,-0.216796875
+112,1746,Jonathan Allen,football,-0.44374573,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jonathan Allen plays the sport of",Fact: Jonathan Allen plays the sport of,-0.8515625
+113,15115,Jason Heyward,baseball,-0.07423852,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jason Heyward plays the sport of",Fact: Jason Heyward plays the sport of,-0.25390625
+114,6163,Paul George,basketball,-0.018849999,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Paul George plays the sport of",Fact: Paul George plays the sport of,-0.2041015625
+117,5298,Steve Nash,basketball,-0.1700689,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Steve Nash plays the sport of",Fact: Steve Nash plays the sport of,-0.470703125
+119,209,Marvin Harrison,football,-0.6665727,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Marvin Harrison plays the sport of",Fact: Marvin Harrison plays the sport of,-1.5859375
+121,96,Mike Tomlin,football,-0.1627895,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Tomlin plays the sport of",Fact: Mike Tomlin plays the sport of,-1.2734375
+123,413,Nick Fairley,football,-0.54084176,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Nick Fairley plays the sport of",Fact: Nick Fairley plays the sport of,-0.4609375
+125,16294,Gerrit Cole,baseball,-0.02041331,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Gerrit Cole plays the sport of",Fact: Gerrit Cole plays the sport of,-0.2890625
+126,14942,Stephen Drew,baseball,-0.19886494,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Stephen Drew plays the sport of",Fact: Stephen Drew plays the sport of,-0.171875
+128,7736,Tobias Harris,basketball,-0.23063608,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Tobias Harris plays the sport of",Fact: Tobias Harris plays the sport of,-0.25390625
+130,14749,Jimmy Rollins,baseball,-0.4029758,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jimmy Rollins plays the sport of",Fact: Jimmy Rollins plays the sport of,-0.345703125
+131,6360,Raymond Felton,basketball,-0.11293703,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Raymond Felton plays the sport of",Fact: Raymond Felton plays the sport of,-0.3125
+133,14433,Jim Thome,baseball,-0.049440224,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jim Thome plays the sport of",Fact: Jim Thome plays the sport of,-0.1845703125
+134,512,Tyrod Taylor,football,-0.17960222,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Tyrod Taylor plays the sport of",Fact: Tyrod Taylor plays the sport of,-0.2890625
+136,14417,Phil Hughes,baseball,-0.089629166,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Phil Hughes plays the sport of",Fact: Phil Hughes plays the sport of,-0.8515625
+138,15208,Justin Masterson,baseball,-0.109822385,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Justin Masterson plays the sport of",Fact: Justin Masterson plays the sport of,-1.1875
+141,14259,Matt Garza,baseball,-0.10198602,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Garza plays the sport of",Fact: Matt Garza plays the sport of,-0.5234375
+142,6283,Marcus Camby,basketball,-0.0894577,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Marcus Camby plays the sport of",Fact: Marcus Camby plays the sport of,-0.2421875
+151,14454,Pablo Sandoval,baseball,-0.060536213,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Pablo Sandoval plays the sport of",Fact: Pablo Sandoval plays the sport of,-0.52734375
+155,13624,Juwan Morgan,basketball,-0.4776256,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Juwan Morgan plays the sport of",Fact: Juwan Morgan plays the sport of,-0.330078125
+156,11503,Aaron Gordon,basketball,-0.14922586,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Aaron Gordon plays the sport of",Fact: Aaron Gordon plays the sport of,-0.2109375
+161,14562,Alex Avila,baseball,-0.69453156,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Alex Avila plays the sport of",Fact: Alex Avila plays the sport of,-0.345703125
+162,444,Rex Ryan,football,-0.07217765,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Rex Ryan plays the sport of",Fact: Rex Ryan plays the sport of,-1.234375
+164,6569,Zach Randolph,basketball,-0.060766537,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Zach Randolph plays the sport of",Fact: Zach Randolph plays the sport of,-0.248046875
+171,15064,Ben Revere,baseball,-0.29652953,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Ben Revere plays the sport of",Fact: Ben Revere plays the sport of,-0.330078125
+175,6557,James Harden,basketball,-0.0738348,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: James Harden plays the sport of",Fact: James Harden plays the sport of,-0.2041015625
+178,468,Roger Goodell,football,-0.11373477,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Roger Goodell plays the sport of",Fact: Roger Goodell plays the sport of,-0.65625
+182,15117,Ned Yost,baseball,-0.59701455,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Ned Yost plays the sport of",Fact: Ned Yost plays the sport of,-0.486328125
+184,14662,Cole Hamels,baseball,-0.08328682,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Cole Hamels plays the sport of",Fact: Cole Hamels plays the sport of,-0.435546875
+186,638,Jon Kitna,football,-0.39053807,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jon Kitna plays the sport of",Fact: Jon Kitna plays the sport of,-1.0546875
+190,5300,Tony Parker,basketball,-0.12508214,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Tony Parker plays the sport of",Fact: Tony Parker plays the sport of,-0.58203125
+198,14135,David Price,baseball,-0.089208595,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: David Price plays the sport of",Fact: David Price plays the sport of,-1.0625
+199,14572,Adam Eaton,baseball,-0.21437576,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Adam Eaton plays the sport of",Fact: Adam Eaton plays the sport of,-0.8828125
+201,14871,Ryan Howard,baseball,-0.044199802,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Ryan Howard plays the sport of",Fact: Ryan Howard plays the sport of,-0.50390625
+202,15703,Chris Archer,baseball,-0.24041891,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Chris Archer plays the sport of",Fact: Chris Archer plays the sport of,-0.5546875
+203,183,Vince Young,football,-0.118530534,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Vince Young plays the sport of",Fact: Vince Young plays the sport of,-0.40625
+206,1274,Kyle Long,football,-0.24180588,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Kyle Long plays the sport of",Fact: Kyle Long plays the sport of,-0.546875
+217,299,Hines Ward,football,-0.0473114,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Hines Ward plays the sport of",Fact: Hines Ward plays the sport of,-0.5546875
+220,14380,Alex Cora,baseball,-0.5051039,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Alex Cora plays the sport of",Fact: Alex Cora plays the sport of,-0.50390625
+225,6288,Joe Dumars,basketball,-0.11109059,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Joe Dumars plays the sport of",Fact: Joe Dumars plays the sport of,-0.466796875
+228,6510,Smush Parker,basketball,-0.6864828,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Smush Parker plays the sport of",Fact: Smush Parker plays the sport of,-0.82421875
+232,14425,Joe Nathan,baseball,-0.053928666,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Joe Nathan plays the sport of",Fact: Joe Nathan plays the sport of,-0.5234375
+233,6821,Mike Miller,basketball,-0.678642,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Miller plays the sport of",Fact: Mike Miller plays the sport of,-0.63671875
+236,649,Matthew Stafford,football,-0.07410437,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Matthew Stafford plays the sport of",Fact: Matthew Stafford plays the sport of,-0.37890625
+237,14640,Ben Zobrist,baseball,-0.07732957,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Ben Zobrist plays the sport of",Fact: Ben Zobrist plays the sport of,-0.5
+238,735,Reggie White,football,-0.10763046,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Reggie White plays the sport of",Fact: Reggie White plays the sport of,-0.76171875
+239,875,Vincent Jackson,football,-0.15907876,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Vincent Jackson plays the sport of",Fact: Vincent Jackson plays the sport of,-0.64453125
+240,811,Julio Jones,football,-0.16191943,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Julio Jones plays the sport of",Fact: Julio Jones plays the sport of,-0.248046875
+241,1177,Allen Robinson,football,-0.2508071,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Allen Robinson plays the sport of",Fact: Allen Robinson plays the sport of,-0.57421875
+242,1498,Melvin Gordon,football,-0.30519193,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Melvin Gordon plays the sport of",Fact: Melvin Gordon plays the sport of,-0.1982421875
+243,14437,Andre Ethier,baseball,-0.08969466,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Andre Ethier plays the sport of",Fact: Andre Ethier plays the sport of,-1.0546875
+244,1019,Troy Smith,football,-0.3857803,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Troy Smith plays the sport of",Fact: Troy Smith plays the sport of,-0.625
+245,14182,Rafael Soriano,baseball,-0.23727453,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Rafael Soriano plays the sport of",Fact: Rafael Soriano plays the sport of,-0.69140625
+246,106,Victor Cruz,football,-0.121144064,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Victor Cruz plays the sport of",Fact: Victor Cruz plays the sport of,-0.890625
+250,6068,Rick Pitino,basketball,-0.1700653,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Rick Pitino plays the sport of",Fact: Rick Pitino plays the sport of,-0.74609375
+254,749,Justin Tucker,football,-0.16676731,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Justin Tucker plays the sport of",Fact: Justin Tucker plays the sport of,-1.2734375
+256,11076,Brad Stevens,basketball,-0.1006565,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Brad Stevens plays the sport of",Fact: Brad Stevens plays the sport of,-1.125
+258,15111,Matt Adams,baseball,-0.461219,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Adams plays the sport of",Fact: Matt Adams plays the sport of,-0.58984375
+260,415,Dez Bryant,football,-0.092864506,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Dez Bryant plays the sport of",Fact: Dez Bryant plays the sport of,-0.330078125
+263,13250,Luke Kennard,basketball,-0.6112693,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Luke Kennard plays the sport of",Fact: Luke Kennard plays the sport of,-0.357421875
+267,200,Miles Austin,football,-0.39100504,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Miles Austin plays the sport of",Fact: Miles Austin plays the sport of,-1.796875
+268,14406,Nelson Cruz,baseball,-0.07068226,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Nelson Cruz plays the sport of",Fact: Nelson Cruz plays the sport of,-0.265625
+270,16791,Rafael Devers,baseball,-0.022430057,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Rafael Devers plays the sport of",Fact: Rafael Devers plays the sport of,-0.265625
+272,17009,Trevor Story,baseball,-0.051772825,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Trevor Story plays the sport of",Fact: Trevor Story plays the sport of,-0.2421875
+273,14649,Michael Morse,baseball,-0.29186177,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Michael Morse plays the sport of",Fact: Michael Morse plays the sport of,-0.91796875
+276,563,Mario Manningham,football,-0.09337433,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mario Manningham plays the sport of",Fact: Mario Manningham plays the sport of,-0.3359375
+279,7121,David Blatt,basketball,-0.25344458,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: David Blatt plays the sport of",Fact: David Blatt plays the sport of,-0.609375
+280,11358,Steven Adams,basketball,-0.33250424,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Steven Adams plays the sport of",Fact: Steven Adams plays the sport of,-0.76953125
+281,13184,Jarrett Allen,basketball,-0.42419976,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jarrett Allen plays the sport of",Fact: Jarrett Allen plays the sport of,-0.27734375
+282,14863,James Loney,baseball,-0.22812457,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: James Loney plays the sport of",Fact: James Loney plays the sport of,-0.55078125
+284,5798,Anthony Davis,basketball,-0.040634945,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Anthony Davis plays the sport of",Fact: Anthony Davis plays the sport of,-0.357421875
+285,5816,Chris Webber,basketball,-0.3258406,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Chris Webber plays the sport of",Fact: Chris Webber plays the sport of,-0.384765625
+291,5918,Deron Williams,basketball,-0.06894043,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Deron Williams plays the sport of",Fact: Deron Williams plays the sport of,-0.451171875
+293,14163,Adam Dunn,baseball,-0.03655107,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Adam Dunn plays the sport of",Fact: Adam Dunn plays the sport of,-0.306640625
+294,14595,Alex Cobb,baseball,-0.3455988,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Alex Cobb plays the sport of",Fact: Alex Cobb plays the sport of,-0.330078125
+295,1339,Jaylon Smith,football,-0.31456915,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jaylon Smith plays the sport of",Fact: Jaylon Smith plays the sport of,-0.283203125
+297,12986,Kevin Knox,basketball,-0.062740326,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Kevin Knox plays the sport of",Fact: Kevin Knox plays the sport of,-0.470703125
+298,767,Mike Webster,football,-0.596571,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Webster plays the sport of",Fact: Mike Webster plays the sport of,-0.3125
+301,14480,Russell Martin,baseball,-0.21185572,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Russell Martin plays the sport of",Fact: Russell Martin plays the sport of,-0.50390625
+303,5596,Stephen Jackson,basketball,-0.4479912,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Stephen Jackson plays the sport of",Fact: Stephen Jackson plays the sport of,-0.5
+306,1450,Zack Martin,football,-0.2696458,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Zack Martin plays the sport of",Fact: Zack Martin plays the sport of,-1.25
+307,14081,Barry Bonds,baseball,-0.07438029,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Barry Bonds plays the sport of",Fact: Barry Bonds plays the sport of,-0.2109375
+312,186,Joseph Addai,football,-0.22191858,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Joseph Addai plays the sport of",Fact: Joseph Addai plays the sport of,-0.5078125
+313,15510,Robin Yount,baseball,-0.07054329,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Robin Yount plays the sport of",Fact: Robin Yount plays the sport of,-0.39453125
+314,1810,Chris Godwin,football,-0.5504888,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Chris Godwin plays the sport of",Fact: Chris Godwin plays the sport of,-0.69921875
+315,7362,Greg Monroe,basketball,-0.65534407,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Greg Monroe plays the sport of",Fact: Greg Monroe plays the sport of,-0.283203125
+318,6409,Nick Collison,basketball,-0.20355307,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Nick Collison plays the sport of",Fact: Nick Collison plays the sport of,-0.30078125
+319,14759,Craig Biggio,baseball,-0.06071067,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Craig Biggio plays the sport of",Fact: Craig Biggio plays the sport of,-0.2421875
+320,16716,Marcus Semien,baseball,-0.18298984,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Marcus Semien plays the sport of",Fact: Marcus Semien plays the sport of,-0.2353515625
+326,6311,Robert Horry,basketball,-0.38792142,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Robert Horry plays the sport of",Fact: Robert Horry plays the sport of,-0.39453125
+329,503,Asante Samuel,football,-0.38179544,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Asante Samuel plays the sport of",Fact: Asante Samuel plays the sport of,-1.953125
+331,14990,Joe Mauer,baseball,-0.024363633,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Joe Mauer plays the sport of",Fact: Joe Mauer plays the sport of,-0.2109375
+333,16113,Carlos Rodon,baseball,-0.4674688,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Carlos Rodon plays the sport of",Fact: Carlos Rodon plays the sport of,-0.55859375
+337,15073,Matt Harvey,baseball,-0.033451647,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Harvey plays the sport of",Fact: Matt Harvey plays the sport of,-0.32421875
+341,15022,Miguel Cabrera,baseball,-0.0075272038,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Miguel Cabrera plays the sport of",Fact: Miguel Cabrera plays the sport of,-0.2421875
+342,6437,Ty Lawson,basketball,-0.09798201,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Ty Lawson plays the sport of",Fact: Ty Lawson plays the sport of,-0.1845703125
+345,15040,Mike Matheny,baseball,-0.09895903,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Matheny plays the sport of",Fact: Mike Matheny plays the sport of,-0.62890625
+347,5836,Baron Davis,basketball,-0.10006206,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Baron Davis plays the sport of",Fact: Baron Davis plays the sport of,-0.64453125
+355,1116,Delanie Walker,football,-0.3249226,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Delanie Walker plays the sport of",Fact: Delanie Walker plays the sport of,-0.490234375
+364,1550,James Conner,football,-0.13213304,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: James Conner plays the sport of",Fact: James Conner plays the sport of,-0.341796875
+371,1946,Matt Breida,football,-0.34527218,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Breida plays the sport of",Fact: Matt Breida plays the sport of,-0.283203125
+373,14137,Randy Johnson,baseball,-0.21083893,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Randy Johnson plays the sport of",Fact: Randy Johnson plays the sport of,-0.97265625
+376,16998,Max Muncy,baseball,-0.5200709,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Max Muncy plays the sport of",Fact: Max Muncy plays the sport of,-0.431640625
+379,789,Trent Williams,football,-0.6836354,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Trent Williams plays the sport of",Fact: Trent Williams plays the sport of,-0.40625
+383,14440,Carlos Lee,baseball,-0.23146842,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Carlos Lee plays the sport of",Fact: Carlos Lee plays the sport of,-0.73046875
+384,14460,Kirk Gibson,baseball,-0.26315832,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Kirk Gibson plays the sport of",Fact: Kirk Gibson plays the sport of,-1.25
+386,7395,Maya Moore,basketball,-0.6229118,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Maya Moore plays the sport of",Fact: Maya Moore plays the sport of,-0.400390625
+387,570,Barry Sanders,football,-0.14127856,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Barry Sanders plays the sport of",Fact: Barry Sanders plays the sport of,-0.87890625
+388,310,Ray Rice,football,-0.12018034,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ray Rice plays the sport of",Fact: Ray Rice plays the sport of,-0.400390625
+390,5493,Candace Parker,basketball,-0.08093422,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Candace Parker plays the sport of",Fact: Candace Parker plays the sport of,-0.50390625
+392,1461,Dee Ford,football,-0.4122816,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Dee Ford plays the sport of",Fact: Dee Ford plays the sport of,-0.390625
+394,1854,Nick Bosa,football,-0.08397989,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Nick Bosa plays the sport of",Fact: Nick Bosa plays the sport of,-0.265625
+395,14637,Jeff Bagwell,baseball,-0.11191229,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jeff Bagwell plays the sport of",Fact: Jeff Bagwell plays the sport of,-0.384765625
+396,56,Jon Gruden,football,-0.1790802,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jon Gruden plays the sport of",Fact: Jon Gruden plays the sport of,-1.5546875
+401,15337,Brad Ausmus,baseball,-0.17800047,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Brad Ausmus plays the sport of",Fact: Brad Ausmus plays the sport of,-0.51953125
+402,104,Emmitt Smith,football,-0.123403005,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Emmitt Smith plays the sport of",Fact: Emmitt Smith plays the sport of,-1.28125
+404,544,Christian Ponder,football,-0.5151783,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Christian Ponder plays the sport of",Fact: Christian Ponder plays the sport of,-0.451171875
+406,558,Josh Sitton,football,-0.19629431,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Sitton plays the sport of",Fact: Josh Sitton plays the sport of,-1.2734375
+408,7632,Lou Williams,basketball,-0.21423723,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Lou Williams plays the sport of",Fact: Lou Williams plays the sport of,-0.345703125
+414,1342,Jordan Reed,football,-0.1934173,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jordan Reed plays the sport of",Fact: Jordan Reed plays the sport of,-0.75390625
+415,14997,Anthony Gose,baseball,-0.31737536,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Anthony Gose plays the sport of",Fact: Anthony Gose plays the sport of,-0.53125
+417,374,Johnny Manziel,football,-0.101496525,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Johnny Manziel plays the sport of",Fact: Johnny Manziel plays the sport of,-0.48046875
+420,229,Wes Welker,football,-0.100032404,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Wes Welker plays the sport of",Fact: Wes Welker plays the sport of,-0.8046875
+423,14413,Dave Winfield,baseball,-0.31180915,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Dave Winfield plays the sport of",Fact: Dave Winfield plays the sport of,-0.55859375
+427,1397,Giovani Bernard,football,-0.39537293,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Giovani Bernard plays the sport of",Fact: Giovani Bernard plays the sport of,-0.9765625
+428,14130,David Ortiz,baseball,-0.04280999,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: David Ortiz plays the sport of",Fact: David Ortiz plays the sport of,-0.4453125
+429,14856,David Wright,baseball,-0.13342525,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: David Wright plays the sport of",Fact: David Wright plays the sport of,-0.421875
+432,16825,Josh Hader,baseball,-0.13985096,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Hader plays the sport of",Fact: Josh Hader plays the sport of,-0.171875
+437,15640,Justin Upton,baseball,-0.03680917,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Justin Upton plays the sport of",Fact: Justin Upton plays the sport of,-0.265625
+439,1022,Brandon Marshall,football,-0.41799292,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Brandon Marshall plays the sport of",Fact: Brandon Marshall plays the sport of,-0.390625
+441,14638,Cody Ross,baseball,-0.35638118,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Cody Ross plays the sport of",Fact: Cody Ross plays the sport of,-0.50390625
+442,14715,Scott Kazmir,baseball,-0.14029077,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Scott Kazmir plays the sport of",Fact: Scott Kazmir plays the sport of,-0.63671875
+443,974,Bobby Wagner,football,-0.09362294,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Bobby Wagner plays the sport of",Fact: Bobby Wagner plays the sport of,-0.71484375
+452,656,Chip Kelly,football,-0.1433281,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Chip Kelly plays the sport of",Fact: Chip Kelly plays the sport of,-0.70703125
+459,1361,Riley Cooper,football,-0.19521669,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Riley Cooper plays the sport of",Fact: Riley Cooper plays the sport of,-0.345703125
+460,16257,José Hernández,baseball,-0.5398631,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: José Hernández plays the sport of",Fact: José Hernández plays the sport of,-1.6015625
+466,1197,Antonio Brown,football,-0.043505084,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Antonio Brown plays the sport of",Fact: Antonio Brown plays the sport of,-0.294921875
+467,1328,Cris Collinsworth,football,-0.48264468,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Cris Collinsworth plays the sport of",Fact: Cris Collinsworth plays the sport of,-1.046875
+468,1066,Russell Okung,football,-0.08937344,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Russell Okung plays the sport of",Fact: Russell Okung plays the sport of,-0.87890625
+471,5306,Kevin Garnett,basketball,-0.03441694,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Kevin Garnett plays the sport of",Fact: Kevin Garnett plays the sport of,-0.39453125
+472,5342,Jason Kidd,basketball,-0.05202352,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jason Kidd plays the sport of",Fact: Jason Kidd plays the sport of,-0.2294921875
+479,8076,Anthony Randolph,basketball,-0.30385128,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Anthony Randolph plays the sport of",Fact: Anthony Randolph plays the sport of,-0.435546875
+480,279,Rod Woodson,football,-0.21773611,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Rod Woodson plays the sport of",Fact: Rod Woodson plays the sport of,-1.3203125
+481,15488,Ron Gardenhire,baseball,-0.2667881,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Ron Gardenhire plays the sport of",Fact: Ron Gardenhire plays the sport of,-0.72265625
+483,15864,Steve Sax,baseball,-0.3357912,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Steve Sax plays the sport of",Fact: Steve Sax plays the sport of,-0.9765625
+485,12994,Jalen Jones,basketball,-0.4782493,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jalen Jones plays the sport of",Fact: Jalen Jones plays the sport of,-0.318359375
+488,1444,Michael Sam,football,-0.07203367,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Michael Sam plays the sport of",Fact: Michael Sam plays the sport of,-0.36328125
+489,12687,Josh Richardson,basketball,-0.38210845,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Richardson plays the sport of",Fact: Josh Richardson plays the sport of,-0.3359375
+492,1094,Mike Tolbert,football,-0.20313354,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Tolbert plays the sport of",Fact: Mike Tolbert plays the sport of,-0.71484375
+493,787,Josh Norman,football,-0.12059897,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Norman plays the sport of",Fact: Josh Norman plays the sport of,-0.357421875
+496,337,Mario Williams,football,-0.3030443,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mario Williams plays the sport of",Fact: Mario Williams plays the sport of,-0.390625
+505,14781,Josh Beckett,baseball,-0.38614586,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Beckett plays the sport of",Fact: Josh Beckett plays the sport of,-0.87890625
+506,438,Matt Kalil,football,-0.17075324,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Kalil plays the sport of",Fact: Matt Kalil plays the sport of,-0.82421875
+507,9249,Andre Ingram,basketball,-0.43071073,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Andre Ingram plays the sport of",Fact: Andre Ingram plays the sport of,-0.138671875
+508,1771,Mason Rudolph,football,-0.2111815,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mason Rudolph plays the sport of",Fact: Mason Rudolph plays the sport of,-0.41015625
+511,15027,Paul Molitor,baseball,-0.13434847,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Paul Molitor plays the sport of",Fact: Paul Molitor plays the sport of,-0.50390625
+512,542,Nick Folk,football,-0.3799783,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Nick Folk plays the sport of",Fact: Nick Folk plays the sport of,-1.0546875
+513,364,Sam Bradford,football,-0.08489644,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Sam Bradford plays the sport of",Fact: Sam Bradford plays the sport of,-0.318359375
+518,6228,Stephen Curry,basketball,-0.051877525,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Stephen Curry plays the sport of",Fact: Stephen Curry plays the sport of,-0.27734375
+521,6236,Isaiah Thomas,basketball,-0.037052043,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Isaiah Thomas plays the sport of",Fact: Isaiah Thomas plays the sport of,-0.171875
+524,779,Montee Ball,football,-0.48679698,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Montee Ball plays the sport of",Fact: Montee Ball plays the sport of,-0.5859375
+525,795,Lawrence Taylor,football,-0.10534479,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Lawrence Taylor plays the sport of",Fact: Lawrence Taylor plays the sport of,-0.5546875
+526,5297,David Robinson,basketball,-0.32506147,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: David Robinson plays the sport of",Fact: David Robinson plays the sport of,-0.6484375
+528,340,Joe Haden,football,-0.24214578,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Joe Haden plays the sport of",Fact: Joe Haden plays the sport of,-0.357421875
+530,13138,Jordan Bell,basketball,-0.23502877,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jordan Bell plays the sport of",Fact: Jordan Bell plays the sport of,-0.30078125
+532,5325,John Stockton,basketball,-0.08167023,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: John Stockton plays the sport of",Fact: John Stockton plays the sport of,-0.2353515625
+534,1739,Mike Gesicki,football,-0.22690187,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Gesicki plays the sport of",Fact: Mike Gesicki plays the sport of,-0.515625
+535,5936,Marc Gasol,basketball,-0.054299757,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Marc Gasol plays the sport of",Fact: Marc Gasol plays the sport of,-0.369140625
+537,405,Jeff Fisher,football,-0.52811015,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jeff Fisher plays the sport of",Fact: Jeff Fisher plays the sport of,-0.84375
+540,14216,Chipper Jones,baseball,-0.057198655,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Chipper Jones plays the sport of",Fact: Chipper Jones plays the sport of,-0.3359375
+541,502,Josh Freeman,football,-0.14054509,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Freeman plays the sport of",Fact: Josh Freeman plays the sport of,-0.52734375
+549,14162,José Reyes,baseball,-0.27798763,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: José Reyes plays the sport of",Fact: José Reyes plays the sport of,-0.71484375
+552,14257,David Freese,baseball,-0.19576046,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: David Freese plays the sport of",Fact: David Freese plays the sport of,-0.62109375
+556,450,Cam Newton,football,-0.065155745,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Cam Newton plays the sport of",Fact: Cam Newton plays the sport of,-0.400390625
+559,16178,Jonathan Schoop,baseball,-0.6841408,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jonathan Schoop plays the sport of",Fact: Jonathan Schoop plays the sport of,-0.390625
+560,14910,Frank Thomas,baseball,-0.16648124,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Frank Thomas plays the sport of",Fact: Frank Thomas plays the sport of,-0.248046875
+561,14497,Brian McCann,baseball,-0.1367524,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Brian McCann plays the sport of",Fact: Brian McCann plays the sport of,-0.4609375
+563,6895,Jeff Teague,basketball,-0.16225365,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jeff Teague plays the sport of",Fact: Jeff Teague plays the sport of,-0.294921875
+564,10924,Anthony Bennett,basketball,-0.064762734,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Anthony Bennett plays the sport of",Fact: Anthony Bennett plays the sport of,-0.27734375
+565,15049,Josh Hamilton,baseball,-0.07275276,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Hamilton plays the sport of",Fact: Josh Hamilton plays the sport of,-0.2109375
+568,806,Michael Irvin,football,-0.094774485,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Michael Irvin plays the sport of",Fact: Michael Irvin plays the sport of,-0.72265625
+569,16721,Michael Fulmer,baseball,-0.076361544,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Michael Fulmer plays the sport of",Fact: Michael Fulmer plays the sport of,-0.369140625
+577,15981,David Wells,baseball,-0.26356137,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: David Wells plays the sport of",Fact: David Wells plays the sport of,-1.2890625
+584,1813,Nathan Peterman,football,-0.31140757,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Nathan Peterman plays the sport of",Fact: Nathan Peterman plays the sport of,-0.341796875
+585,5336,Chris Bosh,basketball,-0.04584757,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Chris Bosh plays the sport of",Fact: Chris Bosh plays the sport of,-0.37890625
+587,6242,George Gervin,basketball,-0.13552988,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: George Gervin plays the sport of",Fact: George Gervin plays the sport of,-0.2294921875
+594,6629,Chris Paul,basketball,-0.040700067,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Chris Paul plays the sport of",Fact: Chris Paul plays the sport of,-0.259765625
+597,8250,John Henson,basketball,-0.14051442,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: John Henson plays the sport of",Fact: John Henson plays the sport of,-0.76171875
+599,5803,Jason Terry,basketball,-0.1956141,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jason Terry plays the sport of",Fact: Jason Terry plays the sport of,-0.27734375
+606,439,Ed Reed,football,-0.074535325,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ed Reed plays the sport of",Fact: Ed Reed plays the sport of,-0.421875
+607,700,Gary Kubiak,football,-0.10470836,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Gary Kubiak plays the sport of",Fact: Gary Kubiak plays the sport of,-0.73828125
+613,5799,Josh Smith,basketball,-0.26165476,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Smith plays the sport of",Fact: Josh Smith plays the sport of,-0.6796875
+615,6946,Fab Melo,basketball,-0.2359776,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Fab Melo plays the sport of",Fact: Fab Melo plays the sport of,-0.73046875
+616,1767,Justin Herbert,football,-0.35876665,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Justin Herbert plays the sport of",Fact: Justin Herbert plays the sport of,-0.70703125
+618,15381,Brad Lidge,baseball,-0.1865444,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Brad Lidge plays the sport of",Fact: Brad Lidge plays the sport of,-0.796875
+619,17067,Luke Voit,baseball,-0.18299052,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Luke Voit plays the sport of",Fact: Luke Voit plays the sport of,-0.25390625
+622,1261,Eric Reid,football,-0.19060719,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Eric Reid plays the sport of",Fact: Eric Reid plays the sport of,-0.248046875
+629,500,Antonio Gates,football,-0.14917082,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Antonio Gates plays the sport of",Fact: Antonio Gates plays the sport of,-0.416015625
+633,5315,Ray Allen,basketball,-0.04587171,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Ray Allen plays the sport of",Fact: Ray Allen plays the sport of,-0.318359375
+635,8,Jason Campbell,football,-0.5917905,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jason Campbell plays the sport of",Fact: Jason Campbell plays the sport of,-0.8828125
+639,21,Tony Romo,football,-0.14199352,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Tony Romo plays the sport of",Fact: Tony Romo plays the sport of,-1.03125
+640,572,Brandon Marshall,football,-0.41799292,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Brandon Marshall plays the sport of",Fact: Brandon Marshall plays the sport of,-0.390625
+647,17017,Alex Verdugo,baseball,-0.110325314,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Alex Verdugo plays the sport of",Fact: Alex Verdugo plays the sport of,-0.54296875
+652,14961,Mike Trout,baseball,-0.0129773095,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Trout plays the sport of",Fact: Mike Trout plays the sport of,-0.1455078125
+653,15806,Carlos Santana,baseball,-0.5953486,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Carlos Santana plays the sport of",Fact: Carlos Santana plays the sport of,-2.78125
+656,15350,Jay Bruce,baseball,-0.09429945,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jay Bruce plays the sport of",Fact: Jay Bruce plays the sport of,-0.30078125
+657,15985,Daniel Murphy,baseball,-0.15097058,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Daniel Murphy plays the sport of",Fact: Daniel Murphy plays the sport of,-0.58984375
+659,872,Charles Woodson,football,-0.06517528,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Charles Woodson plays the sport of",Fact: Charles Woodson plays the sport of,-0.7890625
+660,1378,Mike Zimmer,football,-0.20410523,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Zimmer plays the sport of",Fact: Mike Zimmer plays the sport of,-1.2109375
+661,890,Michael Oher,football,-0.058230497,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Michael Oher plays the sport of",Fact: Michael Oher plays the sport of,-0.3359375
+663,7202,Bill Self,basketball,-0.42459252,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Bill Self plays the sport of",Fact: Bill Self plays the sport of,-0.65625
+666,1744,Jamal Adams,football,-0.20321172,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jamal Adams plays the sport of",Fact: Jamal Adams plays the sport of,-0.83203125
+667,5260,Paul Pierce,basketball,-0.025675086,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Paul Pierce plays the sport of",Fact: Paul Pierce plays the sport of,-0.306640625
+668,14720,Cliff Lee,baseball,-0.040682446,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Cliff Lee plays the sport of",Fact: Cliff Lee plays the sport of,-0.5859375
+674,6649,Terrence Jones,basketball,-0.19568586,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Terrence Jones plays the sport of",Fact: Terrence Jones plays the sport of,-0.451171875
+675,14992,Torii Hunter,baseball,-0.2566087,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Torii Hunter plays the sport of",Fact: Torii Hunter plays the sport of,-0.2041015625
+677,6231,Eric Gordon,basketball,-0.08562834,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Eric Gordon plays the sport of",Fact: Eric Gordon plays the sport of,-0.341796875
+679,1170,Anthony Barr,football,-0.33021164,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Anthony Barr plays the sport of",Fact: Anthony Barr plays the sport of,-1.0
+681,77,Charles Tillman,football,-0.3329389,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Charles Tillman plays the sport of",Fact: Charles Tillman plays the sport of,-0.330078125
+684,7105,Jordan Hill,basketball,-0.49877316,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jordan Hill plays the sport of",Fact: Jordan Hill plays the sport of,-1.0
+685,1669,Leonard Floyd,football,-0.37160346,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Leonard Floyd plays the sport of",Fact: Leonard Floyd plays the sport of,-0.52734375
+688,234,Russell Wilson,football,-0.08271005,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Russell Wilson plays the sport of",Fact: Russell Wilson plays the sport of,-0.70703125
+689,15735,Chris Sale,baseball,-0.041448668,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Chris Sale plays the sport of",Fact: Chris Sale plays the sport of,-0.3359375
+700,1020,Ryan Grant,football,-0.66732866,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ryan Grant plays the sport of",Fact: Ryan Grant plays the sport of,-1.046875
+701,5429,Vince Carter,basketball,-0.09079946,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Vince Carter plays the sport of",Fact: Vince Carter plays the sport of,-0.1982421875
+703,24,Ray Lewis,football,-0.09981946,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ray Lewis plays the sport of",Fact: Ray Lewis plays the sport of,-0.216796875
+704,862,Ronnie Brown,football,-0.65078044,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ronnie Brown plays the sport of",Fact: Ronnie Brown plays the sport of,-0.51953125
+705,13263,Trae Young,basketball,-0.11223605,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Trae Young plays the sport of",Fact: Trae Young plays the sport of,-0.138671875
+711,14716,Alfonso Soriano,baseball,-0.055560037,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Alfonso Soriano plays the sport of",Fact: Alfonso Soriano plays the sport of,-0.625
+712,87,Trent Green,football,-0.31050166,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Trent Green plays the sport of",Fact: Trent Green plays the sport of,-1.859375
+715,6183,Tristan Thompson,basketball,-0.34391156,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Tristan Thompson plays the sport of",Fact: Tristan Thompson plays the sport of,-0.2421875
+718,6041,Nick Young,basketball,-0.34611768,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Nick Young plays the sport of",Fact: Nick Young plays the sport of,-0.40625
+719,5875,Kevin Love,basketball,-0.11331389,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Kevin Love plays the sport of",Fact: Kevin Love plays the sport of,-0.30078125
+723,690,Dennis Pitta,football,-0.42574346,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Dennis Pitta plays the sport of",Fact: Dennis Pitta plays the sport of,-0.91015625
+726,1815,Jordan Howard,football,-0.64898384,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jordan Howard plays the sport of",Fact: Jordan Howard plays the sport of,-0.5625
+727,153,Reggie Wayne,football,-0.08084967,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Reggie Wayne plays the sport of",Fact: Reggie Wayne plays the sport of,-1.3671875
+728,298,Frank Gore,football,-0.18176979,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Frank Gore plays the sport of",Fact: Frank Gore plays the sport of,-0.158203125
+735,16938,Roberto Osuna,baseball,-0.21963857,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Roberto Osuna plays the sport of",Fact: Roberto Osuna plays the sport of,-0.265625
+736,216,Rich Gannon,football,-0.36368188,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Rich Gannon plays the sport of",Fact: Rich Gannon plays the sport of,-0.83984375
+741,15005,Mike Olt,baseball,-0.4933575,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Olt plays the sport of",Fact: Mike Olt plays the sport of,-0.3515625
+747,1657,Dalvin Cook,football,-0.1279948,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Dalvin Cook plays the sport of",Fact: Dalvin Cook plays the sport of,-0.216796875
+749,5313,Tim Duncan,basketball,-0.038187493,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Tim Duncan plays the sport of",Fact: Tim Duncan plays the sport of,-0.2890625
+751,14482,Chris Davis,baseball,-0.08486852,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Chris Davis plays the sport of",Fact: Chris Davis plays the sport of,-0.32421875
+755,191,Andrew Luck,football,-0.08219609,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Andrew Luck plays the sport of",Fact: Andrew Luck plays the sport of,-0.470703125
+757,252,Greg Jennings,football,-0.3666394,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Greg Jennings plays the sport of",Fact: Greg Jennings plays the sport of,-0.51953125
+760,501,Greg Hardy,football,-0.218363,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Greg Hardy plays the sport of",Fact: Greg Hardy plays the sport of,-0.70703125
+761,772,Jimmy Graham,football,-0.05401631,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jimmy Graham plays the sport of",Fact: Jimmy Graham plays the sport of,-0.41015625
+762,5885,Andrew Bogut,basketball,-0.06433694,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Andrew Bogut plays the sport of",Fact: Andrew Bogut plays the sport of,-0.306640625
+766,15976,Doug Fister,baseball,-0.36544827,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Doug Fister plays the sport of",Fact: Doug Fister plays the sport of,-0.48046875
+767,462,Kevin Faulk,football,-0.0937698,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Kevin Faulk plays the sport of",Fact: Kevin Faulk plays the sport of,-0.984375
+768,13651,Jalen Adams,basketball,-0.61741555,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jalen Adams plays the sport of",Fact: Jalen Adams plays the sport of,-0.2890625
+770,305,Eric Dickerson,football,-0.5575239,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Eric Dickerson plays the sport of",Fact: Eric Dickerson plays the sport of,-0.8984375
+771,15211,Johnny Cueto,baseball,-0.09607556,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Johnny Cueto plays the sport of",Fact: Johnny Cueto plays the sport of,-0.39453125
+775,519,Aldon Smith,football,-0.05527154,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Aldon Smith plays the sport of",Fact: Aldon Smith plays the sport of,-0.30078125
+777,164,Dan Marino,football,-0.13493173,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Dan Marino plays the sport of",Fact: Dan Marino plays the sport of,-0.67578125
+780,210,Tony Dorsett,football,-0.13564135,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Tony Dorsett plays the sport of",Fact: Tony Dorsett plays the sport of,-0.71484375
+787,226,Jonathan Vilma,football,-0.11885598,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jonathan Vilma plays the sport of",Fact: Jonathan Vilma plays the sport of,-0.2294921875
+788,15675,Ryan Verdugo,baseball,-0.028717129,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Ryan Verdugo plays the sport of",Fact: Ryan Verdugo plays the sport of,-2.609375
+790,14571,Adam Eaton,baseball,-0.21437576,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Adam Eaton plays the sport of",Fact: Adam Eaton plays the sport of,-0.8828125
+796,852,Chris Long,football,-0.15007418,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Chris Long plays the sport of",Fact: Chris Long plays the sport of,-0.671875
+799,940,Carlos Hyde,football,-0.28537428,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Carlos Hyde plays the sport of",Fact: Carlos Hyde plays the sport of,-0.306640625
+807,289,Earl Campbell,football,-0.3638138,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Earl Campbell plays the sport of",Fact: Earl Campbell plays the sport of,-0.6015625
+809,218,Matt Prater,football,-0.55193037,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Prater plays the sport of",Fact: Matt Prater plays the sport of,-0.87109375
+810,15654,Jonathan Lucroy,baseball,-0.08524254,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jonathan Lucroy plays the sport of",Fact: Jonathan Lucroy plays the sport of,-0.2421875
+816,14812,Josh Donaldson,baseball,-0.017858425,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Donaldson plays the sport of",Fact: Josh Donaldson plays the sport of,-0.578125
+818,6199,Jalen Rose,basketball,-0.08955395,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jalen Rose plays the sport of",Fact: Jalen Rose plays the sport of,-0.357421875
+821,14929,Fernando Tatís,baseball,-0.50118256,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Fernando Tatís plays the sport of",Fact: Fernando Tatís plays the sport of,-0.58203125
+825,317,Ryan Leaf,football,-0.20556246,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ryan Leaf plays the sport of",Fact: Ryan Leaf plays the sport of,-0.609375
+827,5820,Kirk Hinrich,basketball,-0.15732776,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Kirk Hinrich plays the sport of",Fact: Kirk Hinrich plays the sport of,-0.37890625
+828,664,Kevin Kolb,football,-0.41955316,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Kevin Kolb plays the sport of",Fact: Kevin Kolb plays the sport of,-1.0703125
+830,14226,Jorge Posada,baseball,-0.09967143,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jorge Posada plays the sport of",Fact: Jorge Posada plays the sport of,-0.5546875
+833,9500,Delonte Holland,basketball,-0.17464882,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Delonte Holland plays the sport of",Fact: Delonte Holland plays the sport of,-0.73046875
+834,110,Ty Law,football,-0.18517616,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ty Law plays the sport of",Fact: Ty Law plays the sport of,-0.91796875
+837,1388,Matt Nagy,football,-0.057945363,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Nagy plays the sport of",Fact: Matt Nagy plays the sport of,-1.8203125
+838,1384,Jason Kelce,football,-0.33980468,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jason Kelce plays the sport of",Fact: Jason Kelce plays the sport of,-0.76953125
+839,6388,Juwan Howard,basketball,-0.4608677,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Juwan Howard plays the sport of",Fact: Juwan Howard plays the sport of,-0.2890625
+846,230,Greg Schiano,football,-0.1665976,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Greg Schiano plays the sport of",Fact: Greg Schiano plays the sport of,-1.609375
+853,14217,Curt Schilling,baseball,-0.2811316,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Curt Schilling plays the sport of",Fact: Curt Schilling plays the sport of,-0.51953125
+855,6386,George Hill,basketball,-0.084202476,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: George Hill plays the sport of",Fact: George Hill plays the sport of,-0.76171875
+856,5597,Tony Allen,basketball,-0.522032,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Tony Allen plays the sport of",Fact: Tony Allen plays the sport of,-1.2734375
+858,11983,Julius Randle,basketball,-0.06115932,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Julius Randle plays the sport of",Fact: Julius Randle plays the sport of,-0.1845703125
+861,1229,Calais Campbell,football,-0.19801773,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Calais Campbell plays the sport of",Fact: Calais Campbell plays the sport of,-0.5859375
+862,15309,Mike Napoli,baseball,-0.044524465,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Napoli plays the sport of",Fact: Mike Napoli plays the sport of,-0.400390625
+863,12515,Amile Jefferson,basketball,-0.4759573,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Amile Jefferson plays the sport of",Fact: Amile Jefferson plays the sport of,-0.373046875
+865,291,Eric Berry,football,-0.12723996,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Eric Berry plays the sport of",Fact: Eric Berry plays the sport of,-0.40625
+866,5327,Sue Bird,basketball,-0.17764504,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Sue Bird plays the sport of",Fact: Sue Bird plays the sport of,-0.400390625
+871,14467,Joe Girardi,baseball,-0.12238778,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Joe Girardi plays the sport of",Fact: Joe Girardi plays the sport of,-0.90234375
+874,774,Mark Brunell,football,-0.5508457,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mark Brunell plays the sport of",Fact: Mark Brunell plays the sport of,-0.890625
+879,573,Brian Hoyer,football,-0.3590692,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Brian Hoyer plays the sport of",Fact: Brian Hoyer plays the sport of,-0.5
+880,371,Dave Duerson,football,-0.6930604,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Dave Duerson plays the sport of",Fact: Dave Duerson plays the sport of,-0.57421875
+882,1081,Brandon Graham,football,-0.19156563,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Brandon Graham plays the sport of",Fact: Brandon Graham plays the sport of,-1.171875
+887,667,Torrey Smith,football,-0.2754036,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Torrey Smith plays the sport of",Fact: Torrey Smith plays the sport of,-0.5234375
+889,14757,Nick Swisher,baseball,-0.07267838,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Nick Swisher plays the sport of",Fact: Nick Swisher plays the sport of,-0.71484375
+891,31,Nick Saban,football,-0.10370287,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Nick Saban plays the sport of",Fact: Nick Saban plays the sport of,-1.65625
+894,5933,Gilbert Arenas,basketball,-0.07412186,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Gilbert Arenas plays the sport of",Fact: Gilbert Arenas plays the sport of,-0.39453125
+896,7838,Jaren Jackson,basketball,-0.42100993,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jaren Jackson plays the sport of",Fact: Jaren Jackson plays the sport of,-0.37890625
+901,1755,Josh Allen,football,-0.11613362,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Allen plays the sport of",Fact: Josh Allen plays the sport of,-0.37890625
+903,14857,Don Mattingly,baseball,-0.029934969,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Don Mattingly plays the sport of",Fact: Don Mattingly plays the sport of,-0.41015625
+904,1431,Ryan Grant,football,-0.66732866,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ryan Grant plays the sport of",Fact: Ryan Grant plays the sport of,-1.046875
+907,370,Terrell Davis,football,-0.19529486,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Terrell Davis plays the sport of",Fact: Terrell Davis plays the sport of,-0.59375
+908,1560,Kyle Allen,football,-0.5922063,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Kyle Allen plays the sport of",Fact: Kyle Allen plays the sport of,-0.8828125
+910,6225,Glen Davis,basketball,-0.59990716,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Glen Davis plays the sport of",Fact: Glen Davis plays the sport of,-0.62890625
+911,15972,Scott Rolen,baseball,-0.109042235,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Scott Rolen plays the sport of",Fact: Scott Rolen plays the sport of,-0.42578125
+924,10880,Gary Harris,basketball,-0.46076265,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Gary Harris plays the sport of",Fact: Gary Harris plays the sport of,-0.37890625
+925,5809,Delonte West,basketball,-0.10515336,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Delonte West plays the sport of",Fact: Delonte West plays the sport of,-0.5625
+929,6212,Jerry Stackhouse,basketball,-0.41462526,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jerry Stackhouse plays the sport of",Fact: Jerry Stackhouse plays the sport of,-0.416015625
+933,14418,Dan Haren,baseball,-0.16030504,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Dan Haren plays the sport of",Fact: Dan Haren plays the sport of,-0.9609375
+937,1073,Doug Martin,football,-0.255358,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Doug Martin plays the sport of",Fact: Doug Martin plays the sport of,-0.39453125
+938,14388,Robinson Canó,baseball,-0.16288784,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Robinson Canó plays the sport of",Fact: Robinson Canó plays the sport of,-0.294921875
+939,12302,Jaylen Brown,basketball,-0.034313396,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jaylen Brown plays the sport of",Fact: Jaylen Brown plays the sport of,-0.40625
+940,366,Patrick Willis,football,-0.08192529,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Patrick Willis plays the sport of",Fact: Patrick Willis plays the sport of,-0.32421875
+949,593,Andy Reid,football,-0.2630492,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Andy Reid plays the sport of",Fact: Andy Reid plays the sport of,-1.46875
+951,597,Calvin Johnson,football,-0.07022709,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Calvin Johnson plays the sport of",Fact: Calvin Johnson plays the sport of,-0.58984375
+952,15098,Matt Kemp,baseball,-0.09812294,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Kemp plays the sport of",Fact: Matt Kemp plays the sport of,-0.39453125
+957,377,Philip Rivers,football,-0.16341896,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Philip Rivers plays the sport of",Fact: Philip Rivers plays the sport of,-0.369140625
+959,11925,Tyus Jones,basketball,-0.20050105,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Tyus Jones plays the sport of",Fact: Tyus Jones plays the sport of,-0.27734375
+961,5818,Brandon Roy,basketball,-0.080567606,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Brandon Roy plays the sport of",Fact: Brandon Roy plays the sport of,-0.25390625
+963,1751,Deion Jones,football,-0.5861343,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Deion Jones plays the sport of",Fact: Deion Jones plays the sport of,-0.2294921875
+966,14403,David Robertson,baseball,-0.17277649,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: David Robertson plays the sport of",Fact: David Robertson plays the sport of,-1.0859375
+967,10760,Tom Izzo,basketball,-0.12570049,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Tom Izzo plays the sport of",Fact: Tom Izzo plays the sport of,-0.84375
+968,15060,Billy Hamilton,baseball,-0.15017378,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Billy Hamilton plays the sport of",Fact: Billy Hamilton plays the sport of,-0.1982421875
+971,1051,Mike Daniels,football,-0.4071982,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Daniels plays the sport of",Fact: Mike Daniels plays the sport of,-0.6484375
+976,976,Bruce Irvin,football,-0.3125658,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Bruce Irvin plays the sport of",Fact: Bruce Irvin plays the sport of,-0.36328125
+977,15530,Ryan Ludwick,baseball,-0.43234375,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Ryan Ludwick plays the sport of",Fact: Ryan Ludwick plays the sport of,-0.9609375
+980,13078,Jaylon Brown,basketball,-0.3501625,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jaylon Brown plays the sport of",Fact: Jaylon Brown plays the sport of,-1.5
+988,5537,Brandon Knight,basketball,-0.069821395,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Brandon Knight plays the sport of",Fact: Brandon Knight plays the sport of,-0.62890625
+990,14103,Billy Beane,baseball,-0.097769275,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Billy Beane plays the sport of",Fact: Billy Beane plays the sport of,-0.515625
+993,1394,EJ Manuel,football,-0.15127343,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: EJ Manuel plays the sport of",Fact: EJ Manuel plays the sport of,-0.435546875
+994,334,Steve Young,football,-0.31162426,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Steve Young plays the sport of",Fact: Steve Young plays the sport of,-0.890625
+995,129,Tom Brady,football,-0.049970727,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Tom Brady plays the sport of",Fact: Tom Brady plays the sport of,-0.3125
+997,7170,Austin Rivers,basketball,-0.12138504,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Austin Rivers plays the sport of",Fact: Austin Rivers plays the sport of,-0.259765625
+998,5956,Jimmy Butler,basketball,-0.037385464,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jimmy Butler plays the sport of",Fact: Jimmy Butler plays the sport of,-0.265625
+999,248,James Harrison,football,-0.21936953,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: James Harrison plays the sport of",Fact: James Harrison plays the sport of,-0.306640625
+1001,460,Marshall Faulk,football,-0.037061002,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Marshall Faulk plays the sport of",Fact: Marshall Faulk plays the sport of,-0.494140625
+1005,1280,Michael Bennett,football,-0.06328475,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Michael Bennett plays the sport of",Fact: Michael Bennett plays the sport of,-0.3125
+1006,669,Bo Jackson,football,-0.5274674,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Bo Jackson plays the sport of",Fact: Bo Jackson plays the sport of,-2.578125
+1008,6558,Joe Johnson,basketball,-0.2078627,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Joe Johnson plays the sport of",Fact: Joe Johnson plays the sport of,-0.59375
+1010,820,Jacoby Jones,football,-0.69055116,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jacoby Jones plays the sport of",Fact: Jacoby Jones plays the sport of,-1.515625
+1011,13540,Jordan Davis,basketball,-0.42048818,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jordan Davis plays the sport of",Fact: Jordan Davis plays the sport of,-1.90625
+1014,14410,David Cone,baseball,-0.59330964,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: David Cone plays the sport of",Fact: David Cone plays the sport of,-0.625
+1020,16029,Tim Raines,baseball,-0.48035556,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Tim Raines plays the sport of",Fact: Tim Raines plays the sport of,-0.2890625
+1023,416,Ben Tate,football,-0.41646793,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ben Tate plays the sport of",Fact: Ben Tate plays the sport of,-0.5
+1026,15776,Rafael Furcal,baseball,-0.21364798,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Rafael Furcal plays the sport of",Fact: Rafael Furcal plays the sport of,-0.37890625
+1027,10998,Ben Howland,basketball,-0.5898197,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Ben Howland plays the sport of",Fact: Ben Howland plays the sport of,-0.609375
+1034,6267,Doc Rivers,basketball,-0.108045295,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Doc Rivers plays the sport of",Fact: Doc Rivers plays the sport of,-0.50390625
+1035,5791,Greg Oden,basketball,-0.36179745,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Greg Oden plays the sport of",Fact: Greg Oden plays the sport of,-0.32421875
+1037,6196,Joe Ingles,basketball,-0.32962522,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Joe Ingles plays the sport of",Fact: Joe Ingles plays the sport of,-0.6015625
+1038,15275,Barry Zito,baseball,-0.13013671,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Barry Zito plays the sport of",Fact: Barry Zito plays the sport of,-1.015625
+1041,300,Michael Vick,football,-0.12795074,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Michael Vick plays the sport of",Fact: Michael Vick plays the sport of,-0.265625
+1042,1808,Will Fuller,football,-0.13301413,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Will Fuller plays the sport of",Fact: Will Fuller plays the sport of,-0.66015625
+1043,8110,Jerome Jordan,basketball,-0.6039613,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jerome Jordan plays the sport of",Fact: Jerome Jordan plays the sport of,-0.546875
+1044,11010,Alex Len,basketball,-0.38432565,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Alex Len plays the sport of",Fact: Alex Len plays the sport of,-0.2890625
+1046,7973,Jason Collins,basketball,-0.29034057,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jason Collins plays the sport of",Fact: Jason Collins plays the sport of,-0.216796875
+1050,6023,James Johnson,basketball,-0.5380204,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: James Johnson plays the sport of",Fact: James Johnson plays the sport of,-0.5625
+1057,13104,Donovan Mitchell,basketball,-0.29611576,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Donovan Mitchell plays the sport of",Fact: Donovan Mitchell plays the sport of,-0.3515625
+1061,5292,Karl Malone,basketball,-0.11991181,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Karl Malone plays the sport of",Fact: Karl Malone plays the sport of,-0.5546875
+1062,194,Reggie Bush,football,-0.31921256,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Reggie Bush plays the sport of",Fact: Reggie Bush plays the sport of,-0.384765625
+1072,6224,John Wall,basketball,-0.04902113,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: John Wall plays the sport of",Fact: John Wall plays the sport of,-0.27734375
+1075,1410,Tom Savage,football,-0.122758664,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Tom Savage plays the sport of",Fact: Tom Savage plays the sport of,-0.78125
+1080,1269,Jamie Collins,football,-0.67598844,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jamie Collins plays the sport of",Fact: Jamie Collins plays the sport of,-0.77734375
+1084,1308,Jeremy Hill,football,-0.5694297,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jeremy Hill plays the sport of",Fact: Jeremy Hill plays the sport of,-0.61328125
+1085,16330,Francisco Lindor,baseball,-0.02333664,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Francisco Lindor plays the sport of",Fact: Francisco Lindor plays the sport of,-0.357421875
+1087,5314,Larry Bird,basketball,-0.036888797,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Larry Bird plays the sport of",Fact: Larry Bird plays the sport of,-0.357421875
+1089,243,Urban Meyer,football,-0.2722656,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Urban Meyer plays the sport of",Fact: Urban Meyer plays the sport of,-1.59375
+1090,7115,Matt Barnes,basketball,-0.3509604,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Barnes plays the sport of",Fact: Matt Barnes plays the sport of,-0.3515625
+1091,15705,Chris Perez,baseball,-0.6519558,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Chris Perez plays the sport of",Fact: Chris Perez plays the sport of,-0.640625
+1097,781,Jason Peters,football,-0.2883684,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jason Peters plays the sport of",Fact: Jason Peters plays the sport of,-0.4609375
+1098,13574,Jalen Smith,basketball,-0.25183508,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jalen Smith plays the sport of",Fact: Jalen Smith plays the sport of,-0.42578125
+1099,5874,Gary Payton,basketball,-0.058924623,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Gary Payton plays the sport of",Fact: Gary Payton plays the sport of,-0.39453125
+1101,16094,Juan Lagares,baseball,-0.11493875,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Juan Lagares plays the sport of",Fact: Juan Lagares plays the sport of,-0.71484375
+1104,409,Patrick Peterson,football,-0.3645598,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Patrick Peterson plays the sport of",Fact: Patrick Peterson plays the sport of,-0.40625
+1112,12544,Grayson Allen,basketball,-0.22235988,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Grayson Allen plays the sport of",Fact: Grayson Allen plays the sport of,-0.37890625
+1113,6375,Marvin Williams,basketball,-0.4566799,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Marvin Williams plays the sport of",Fact: Marvin Williams plays the sport of,-0.76953125
+1118,71,Warren Sapp,football,-0.40796536,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Warren Sapp plays the sport of",Fact: Warren Sapp plays the sport of,-0.99609375
+1120,15055,Bernie Williams,baseball,-0.26394522,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Bernie Williams plays the sport of",Fact: Bernie Williams plays the sport of,-1.2734375
+1121,953,Jordy Nelson,football,-0.07417543,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jordy Nelson plays the sport of",Fact: Jordy Nelson plays the sport of,-0.546875
+1123,1472,Taylor Lewan,football,-0.20155758,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Taylor Lewan plays the sport of",Fact: Taylor Lewan plays the sport of,-0.515625
+1126,14740,Ryan Braun,baseball,-0.028601633,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Ryan Braun plays the sport of",Fact: Ryan Braun plays the sport of,-0.27734375
+1129,253,Ricky Williams,football,-0.22197004,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Ricky Williams plays the sport of",Fact: Ricky Williams plays the sport of,-0.5234375
+1132,14102,Johnny Damon,baseball,-0.12612133,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Johnny Damon plays the sport of",Fact: Johnny Damon plays the sport of,-0.578125
+1133,5888,Mike Bibby,basketball,-0.34444246,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Bibby plays the sport of",Fact: Mike Bibby plays the sport of,-0.384765625
+1135,12161,Myles Turner,basketball,-0.44026935,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Myles Turner plays the sport of",Fact: Myles Turner plays the sport of,-0.42578125
+1136,385,Jason Witten,football,-0.07047242,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jason Witten plays the sport of",Fact: Jason Witten plays the sport of,-0.330078125
+1140,6474,David West,basketball,-0.20960069,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: David West plays the sport of",Fact: David West plays the sport of,-0.76171875
+1141,1901,Trevor Lawrence,football,-0.6689646,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Trevor Lawrence plays the sport of",Fact: Trevor Lawrence plays the sport of,-0.6484375
+1147,14225,Kerry Wood,baseball,-0.50915766,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Kerry Wood plays the sport of",Fact: Kerry Wood plays the sport of,-1.0
+1148,6552,Terrence Williams,basketball,-0.2801379,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Terrence Williams plays the sport of",Fact: Terrence Williams plays the sport of,-0.40625
+1149,1598,Cooper Kupp,football,-0.45695245,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Cooper Kupp plays the sport of",Fact: Cooper Kupp plays the sport of,-0.390625
+1150,5512,Kenneth Faried,basketball,-0.109944776,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Kenneth Faried plays the sport of",Fact: Kenneth Faried plays the sport of,-0.216796875
+1152,15637,Carl Pavano,baseball,-0.26094463,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Carl Pavano plays the sport of",Fact: Carl Pavano plays the sport of,-0.54296875
+1155,316,Jerry Rice,football,-0.067813106,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jerry Rice plays the sport of",Fact: Jerry Rice plays the sport of,-0.73046875
+1156,6227,Bill Walton,basketball,-0.03340057,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Bill Walton plays the sport of",Fact: Bill Walton plays the sport of,-0.45703125
+1157,14072,Mark McGwire,baseball,-0.023068162,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Mark McGwire plays the sport of",Fact: Mark McGwire plays the sport of,-0.30078125
+1159,319,Brian Cushing,football,-0.57359827,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Brian Cushing plays the sport of",Fact: Brian Cushing plays the sport of,-0.400390625
+1162,5524,Derrick Williams,basketball,-0.3181039,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Derrick Williams plays the sport of",Fact: Derrick Williams plays the sport of,-0.341796875
+1163,1062,Eric Decker,football,-0.16328867,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Eric Decker plays the sport of",Fact: Eric Decker plays the sport of,-0.70703125
+1165,5752,Billy Donovan,basketball,-0.07970508,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Billy Donovan plays the sport of",Fact: Billy Donovan plays the sport of,-0.41015625
+1168,7361,Evan Turner,basketball,-0.08333607,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Evan Turner plays the sport of",Fact: Evan Turner plays the sport of,-0.384765625
+1170,15183,Ryan Madson,baseball,-0.12609662,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Ryan Madson plays the sport of",Fact: Ryan Madson plays the sport of,-0.51953125
+1171,12104,Tyler Johnson,basketball,-0.6951261,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Tyler Johnson plays the sport of",Fact: Tyler Johnson plays the sport of,-1.4453125
+1175,13,Jared Allen,football,-0.1988493,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jared Allen plays the sport of",Fact: Jared Allen plays the sport of,-0.953125
+1176,12281,Henry Ellenson,basketball,-0.5196267,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Henry Ellenson plays the sport of",Fact: Henry Ellenson plays the sport of,-0.3515625
+1177,15264,Carlos Quentin,baseball,-0.11259742,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Carlos Quentin plays the sport of",Fact: Carlos Quentin plays the sport of,-0.1845703125
+1179,14661,Mat Latos,baseball,-0.3333519,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Mat Latos plays the sport of",Fact: Mat Latos plays the sport of,-0.546875
+1180,15821,Hunter Pence,baseball,-0.1930382,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Hunter Pence plays the sport of",Fact: Hunter Pence plays the sport of,-0.3515625
+1185,15653,Jon Niese,baseball,-0.078361034,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jon Niese plays the sport of",Fact: Jon Niese plays the sport of,-0.8046875
+1186,830,Matt Ryan,football,-0.17686622,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Ryan plays the sport of",Fact: Matt Ryan plays the sport of,-0.87890625
+1190,14387,Bruce Bochy,baseball,-0.087710746,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Bruce Bochy plays the sport of",Fact: Bruce Bochy plays the sport of,-0.87890625
+1191,1825,George Kittle,football,-0.38246983,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: George Kittle plays the sport of",Fact: George Kittle plays the sport of,-0.451171875
+1193,14610,Ryan Raburn,baseball,-0.20523416,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Ryan Raburn plays the sport of",Fact: Ryan Raburn plays the sport of,-0.5625
+1194,6129,Maurice Cheeks,basketball,-0.4544407,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Maurice Cheeks plays the sport of",Fact: Maurice Cheeks plays the sport of,-0.470703125
+1202,1595,Davante Adams,football,-0.6440103,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Davante Adams plays the sport of",Fact: Davante Adams plays the sport of,-0.341796875
+1209,15684,Charlie Blackmon,baseball,-0.07296368,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Charlie Blackmon plays the sport of",Fact: Charlie Blackmon plays the sport of,-0.259765625
+1210,1239,Jacob Tamme,football,-0.6411506,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jacob Tamme plays the sport of",Fact: Jacob Tamme plays the sport of,-2.6875
+1217,14243,Johan Santana,baseball,-0.029253524,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Johan Santana plays the sport of",Fact: Johan Santana plays the sport of,-0.73046875
+1219,1529,Baker Mayfield,football,-0.0884121,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Baker Mayfield plays the sport of",Fact: Baker Mayfield plays the sport of,-0.81640625
+1220,388,Lovie Smith,football,-0.6949743,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Lovie Smith plays the sport of",Fact: Lovie Smith plays the sport of,-0.69140625
+1222,7148,Jamario Moon,basketball,-0.37671804,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jamario Moon plays the sport of",Fact: Jamario Moon plays the sport of,-0.2294921875
+1223,5440,Reggie Miller,basketball,-0.07802876,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Reggie Miller plays the sport of",Fact: Reggie Miller plays the sport of,-0.45703125
+1224,5852,Jordan Farmar,basketball,-0.14316313,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jordan Farmar plays the sport of",Fact: Jordan Farmar plays the sport of,-0.494140625
+1226,16313,George Springer,baseball,-0.030023234,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: George Springer plays the sport of",Fact: George Springer plays the sport of,-0.4453125
+1227,52,Eli Manning,football,-0.1342336,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Eli Manning plays the sport of",Fact: Eli Manning plays the sport of,-0.330078125
+1229,16868,Luis Severino,baseball,-0.04398285,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Luis Severino plays the sport of",Fact: Luis Severino plays the sport of,-0.30078125
+1255,5792,Serge Ibaka,basketball,-0.048993662,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Serge Ibaka plays the sport of",Fact: Serge Ibaka plays the sport of,-0.65234375
+1258,14982,Lucas Duda,baseball,-0.19896343,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Lucas Duda plays the sport of",Fact: Lucas Duda plays the sport of,-0.63671875
+1261,780,Golden Tate,football,-0.063306354,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Golden Tate plays the sport of",Fact: Golden Tate plays the sport of,-0.44140625
+1264,86,Andre Reed,football,-0.1825142,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Andre Reed plays the sport of",Fact: Andre Reed plays the sport of,-0.400390625
+1265,1368,Justin Forsett,football,-0.32273513,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Justin Forsett plays the sport of",Fact: Justin Forsett plays the sport of,-0.59375
+1267,606,Josh McCown,football,-0.5614923,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh McCown plays the sport of",Fact: Josh McCown plays the sport of,-0.3515625
+1268,124,Joe Montana,football,-0.070607625,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Joe Montana plays the sport of",Fact: Joe Montana plays the sport of,-0.78125
+1272,15094,Austin Jackson,baseball,-0.35995263,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Austin Jackson plays the sport of",Fact: Austin Jackson plays the sport of,-0.86328125
+1276,5571,George Karl,basketball,-0.114300504,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: George Karl plays the sport of",Fact: George Karl plays the sport of,-0.4453125
+1277,15203,Jeff Kent,baseball,-0.3438221,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jeff Kent plays the sport of",Fact: Jeff Kent plays the sport of,-0.39453125
+1280,14948,Javy López,baseball,-0.38693094,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Javy López plays the sport of",Fact: Javy López plays the sport of,-0.515625
+1281,15799,Larry Walker,baseball,-0.27331966,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Larry Walker plays the sport of",Fact: Larry Walker plays the sport of,-0.373046875
+1282,6545,Gordon Hayward,basketball,-0.03703217,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Gordon Hayward plays the sport of",Fact: Gordon Hayward plays the sport of,-0.216796875
+1283,411,Marvin Lewis,football,-0.17031486,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Marvin Lewis plays the sport of",Fact: Marvin Lewis plays the sport of,-0.74609375
+1284,11216,Otto Porter,basketball,-0.09142783,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Otto Porter plays the sport of",Fact: Otto Porter plays the sport of,-0.357421875
+1286,6630,Kevin Durant,basketball,-0.025398988,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Kevin Durant plays the sport of",Fact: Kevin Durant plays the sport of,-0.19140625
+1289,9185,Brett Brown,basketball,-0.3188608,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Brett Brown plays the sport of",Fact: Brett Brown plays the sport of,-0.75390625
+1290,382,Phil Simms,football,-0.2729764,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Phil Simms plays the sport of",Fact: Phil Simms plays the sport of,-1.5625
+1295,14983,Dee Gordon,baseball,-0.075967066,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Dee Gordon plays the sport of",Fact: Dee Gordon plays the sport of,-0.1845703125
+1301,381,Michael Strahan,football,-0.456191,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Michael Strahan plays the sport of",Fact: Michael Strahan plays the sport of,-1.2265625
+1303,16755,Steven Matz,baseball,-0.14668934,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Steven Matz plays the sport of",Fact: Steven Matz plays the sport of,-0.36328125
+1304,538,Von Miller,football,-0.0682893,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Von Miller plays the sport of",Fact: Von Miller plays the sport of,-0.390625
+1306,14228,Jon Lester,baseball,-0.059505276,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jon Lester plays the sport of",Fact: Jon Lester plays the sport of,-0.400390625
+1308,28,Josh Gordon,football,-0.10832623,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Gordon plays the sport of",Fact: Josh Gordon plays the sport of,-0.1787109375
+1314,8336,Rasual Butler,basketball,-0.47131684,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Rasual Butler plays the sport of",Fact: Rasual Butler plays the sport of,-0.390625
+1315,15368,Jason Hammel,baseball,-0.4407475,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jason Hammel plays the sport of",Fact: Jason Hammel plays the sport of,-0.7890625
+1316,7723,Mike Woodson,basketball,-0.19255564,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Woodson plays the sport of",Fact: Mike Woodson plays the sport of,-0.53125
+1318,5434,Patrick Ewing,basketball,-0.05514068,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Patrick Ewing plays the sport of",Fact: Patrick Ewing plays the sport of,-0.3515625
+1319,966,Dion Lewis,football,-0.33216617,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Dion Lewis plays the sport of",Fact: Dion Lewis plays the sport of,-0.494140625
+1320,15135,Neil Walker,baseball,-0.6047567,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Neil Walker plays the sport of",Fact: Neil Walker plays the sport of,-1.171875
+1322,15021,Wilson Ramos,baseball,-0.30920467,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Wilson Ramos plays the sport of",Fact: Wilson Ramos plays the sport of,-0.431640625
+1323,380,Alfred Morris,football,-0.6965068,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Alfred Morris plays the sport of",Fact: Alfred Morris plays the sport of,-0.345703125
+1325,5581,Al Jefferson,basketball,-0.047051556,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Al Jefferson plays the sport of",Fact: Al Jefferson plays the sport of,-0.318359375
+1332,14426,Matt Cain,baseball,-0.039524272,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Matt Cain plays the sport of",Fact: Matt Cain plays the sport of,-0.44140625
+1333,372,Pat Tillman,football,-0.40712488,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Pat Tillman plays the sport of",Fact: Pat Tillman plays the sport of,-0.98828125
+1334,1217,Denard Robinson,football,-0.6936338,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Denard Robinson plays the sport of",Fact: Denard Robinson plays the sport of,-0.6328125
+1338,1451,Brandon Allen,football,-0.37606177,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Brandon Allen plays the sport of",Fact: Brandon Allen plays the sport of,-1.2734375
+1339,474,James Farrior,football,-0.33717823,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: James Farrior plays the sport of",Fact: James Farrior plays the sport of,-0.72265625
+1342,5326,Harrison Barnes,basketball,-0.20156565,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Harrison Barnes plays the sport of",Fact: Harrison Barnes plays the sport of,-0.37890625
+1343,368,Jake Long,football,-0.30922705,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jake Long plays the sport of",Fact: Jake Long plays the sport of,-1.125
+1344,6276,Tim Hardaway,basketball,-0.04999817,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Tim Hardaway plays the sport of",Fact: Tim Hardaway plays the sport of,-0.384765625
+1351,1207,Case Keenum,football,-0.22152653,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Case Keenum plays the sport of",Fact: Case Keenum plays the sport of,-0.45703125
+1352,324,Justin Tuck,football,-0.29310447,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Justin Tuck plays the sport of",Fact: Justin Tuck plays the sport of,-1.921875
+1354,517,Vernon Davis,football,-0.22542852,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Vernon Davis plays the sport of",Fact: Vernon Davis plays the sport of,-0.72265625
+1360,1118,Bruce Arians,football,-0.29027957,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Bruce Arians plays the sport of",Fact: Bruce Arians plays the sport of,-1.390625
+1363,567,Robert Mathis,football,-0.4992299,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Robert Mathis plays the sport of",Fact: Robert Mathis plays the sport of,-0.416015625
+1365,3,Andy Dalton,football,-0.39329785,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Andy Dalton plays the sport of",Fact: Andy Dalton plays the sport of,-0.75390625
+1366,309,Jamal Lewis,football,-0.30751768,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jamal Lewis plays the sport of",Fact: Jamal Lewis plays the sport of,-1.6015625
+1371,14864,Wil Myers,baseball,-0.03995091,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Wil Myers plays the sport of",Fact: Wil Myers plays the sport of,-0.42578125
+1373,1376,Marcus Mariota,football,-0.073833354,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Marcus Mariota plays the sport of",Fact: Marcus Mariota plays the sport of,-0.466796875
+1376,5802,Ben Gordon,basketball,-0.32698885,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Ben Gordon plays the sport of",Fact: Ben Gordon plays the sport of,-0.3515625
+1379,15557,Mitch Moreland,baseball,-0.09773436,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Mitch Moreland plays the sport of",Fact: Mitch Moreland plays the sport of,-0.4453125
+1380,876,Richard Sherman,football,-0.099048115,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Richard Sherman plays the sport of",Fact: Richard Sherman plays the sport of,-0.2294921875
+1381,5610,Pat Summitt,basketball,-0.16846815,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Pat Summitt plays the sport of",Fact: Pat Summitt plays the sport of,-0.494140625
+1382,5934,Jeremy Lin,basketball,-0.059379466,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jeremy Lin plays the sport of",Fact: Jeremy Lin plays the sport of,-0.2353515625
+1383,15517,Josh Willingham,baseball,-0.38149548,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Josh Willingham plays the sport of",Fact: Josh Willingham plays the sport of,-0.400390625
+1391,14724,Alex Gordon,baseball,-0.058729053,2,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Alex Gordon plays the sport of",Fact: Alex Gordon plays the sport of,-0.30078125
+1392,15442,Ike Davis,baseball,-0.14751717,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Ike Davis plays the sport of",Fact: Ike Davis plays the sport of,-0.6171875
+1396,6532,Magic Johnson,basketball,-0.03646992,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Magic Johnson plays the sport of",Fact: Magic Johnson plays the sport of,-0.248046875
+1397,5599,Luke Walton,basketball,-0.1588836,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Luke Walton plays the sport of",Fact: Luke Walton plays the sport of,-0.30078125
+1399,1752,Joe Mixon,football,-0.31578255,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Joe Mixon plays the sport of",Fact: Joe Mixon plays the sport of,-0.2109375
+1401,1865,Joe Burrow,football,-0.1933836,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Joe Burrow plays the sport of",Fact: Joe Burrow plays the sport of,-0.58203125
+1403,14766,Mike Piazza,baseball,-0.041579153,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Piazza plays the sport of",Fact: Mike Piazza plays the sport of,-0.41015625
+1406,13280,LaVar Ball,basketball,-0.14421085,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: LaVar Ball plays the sport of",Fact: LaVar Ball plays the sport of,-0.6640625
+1408,14470,Jed Lowrie,baseball,-0.30115402,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Jed Lowrie plays the sport of",Fact: Jed Lowrie plays the sport of,-0.36328125
+1411,1513,Scott Tolzien,football,-0.24052368,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Scott Tolzien plays the sport of",Fact: Scott Tolzien plays the sport of,-0.40625
+1415,14760,Mike Lowell,baseball,-0.4527576,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Lowell plays the sport of",Fact: Mike Lowell plays the sport of,-0.5859375
+1420,530,Earl Thomas,football,-0.15105945,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Earl Thomas plays the sport of",Fact: Earl Thomas plays the sport of,-0.22265625
+1421,1165,Doug Pederson,football,-0.13260517,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Doug Pederson plays the sport of",Fact: Doug Pederson plays the sport of,-1.2109375
+1424,1195,Amari Cooper,football,-0.07179804,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Amari Cooper plays the sport of",Fact: Amari Cooper plays the sport of,-0.44140625
+1425,6358,Rudy Gay,basketball,-0.15949139,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Rudy Gay plays the sport of",Fact: Rudy Gay plays the sport of,-0.27734375
+1429,5595,David Lee,basketball,-0.46670604,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: David Lee plays the sport of",Fact: David Lee plays the sport of,-1.1328125
+1431,11266,Marcus Smart,basketball,-0.06571046,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Marcus Smart plays the sport of",Fact: Marcus Smart plays the sport of,-0.2353515625
+1432,6121,Len Bias,basketball,-0.2536837,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Len Bias plays the sport of",Fact: Len Bias plays the sport of,-0.6484375
+1436,1236,Adam Gase,football,-0.32897058,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Adam Gase plays the sport of",Fact: Adam Gase plays the sport of,-1.1015625
+1437,1567,Derrick Henry,football,-0.30966166,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Derrick Henry plays the sport of",Fact: Derrick Henry plays the sport of,-0.357421875
+1440,10236,Jay Wright,basketball,-0.15490496,2,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jay Wright plays the sport of",Fact: Jay Wright plays the sport of,-0.73828125
+1443,352,Andre Johnson,football,-0.24054591,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Andre Johnson plays the sport of",Fact: Andre Johnson plays the sport of,-0.65625
+1445,137,Steve Largent,football,-0.5161768,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Steve Largent plays the sport of",Fact: Steve Largent plays the sport of,-0.40625
+1448,1095,Doug Baldwin,football,-0.4496629,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Doug Baldwin plays the sport of",Fact: Doug Baldwin plays the sport of,-0.5
+1449,790,Kurt Warner,football,-0.07850201,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Kurt Warner plays the sport of",Fact: Kurt Warner plays the sport of,-0.9765625
+1453,14412,George Brett,baseball,-0.0160225,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: George Brett plays the sport of",Fact: George Brett plays the sport of,-0.416015625
+1454,14092,Andre Dawson,baseball,-0.545964,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Andre Dawson plays the sport of",Fact: Andre Dawson plays the sport of,-0.62890625
+1469,13912,Jalen Williams,basketball,-0.37451923,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jalen Williams plays the sport of",Fact: Jalen Williams plays the sport of,-1.0703125
+1473,807,Mark Sanchez,football,-0.3298138,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mark Sanchez plays the sport of",Fact: Mark Sanchez plays the sport of,-0.66796875
+1475,14785,Starlin Castro,baseball,-0.02807914,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Starlin Castro plays the sport of",Fact: Starlin Castro plays the sport of,-0.318359375
+1478,6609,Klay Thompson,basketball,-0.06758851,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Klay Thompson plays the sport of",Fact: Klay Thompson plays the sport of,-0.32421875
+1482,412,Heath Miller,football,-0.34624174,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Heath Miller plays the sport of",Fact: Heath Miller plays the sport of,-0.57421875
+1487,1791,Lamar Jackson,football,-0.0932956,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Lamar Jackson plays the sport of",Fact: Lamar Jackson plays the sport of,-0.3359375
+1489,12634,Jamal Murray,basketball,-0.07082898,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Jamal Murray plays the sport of",Fact: Jamal Murray plays the sport of,-0.265625
+1491,15737,Charlie Morton,baseball,-0.2716465,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Charlie Morton plays the sport of",Fact: Charlie Morton plays the sport of,-0.65234375
+1493,529,Steven Jackson,football,-0.32673478,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Steven Jackson plays the sport of",Fact: Steven Jackson plays the sport of,-0.59375
+1496,1587,Marcus Peters,football,-0.18172011,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Marcus Peters plays the sport of",Fact: Marcus Peters plays the sport of,-0.283203125
+1498,16236,Joe Panik,baseball,-0.09304255,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Joe Panik plays the sport of",Fact: Joe Panik plays the sport of,-0.71484375
+1499,16874,Aaron Judge,baseball,-0.011277856,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Aaron Judge plays the sport of",Fact: Aaron Judge plays the sport of,-0.1455078125
+1504,1790,Chris Carson,football,-0.6271684,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Chris Carson plays the sport of",Fact: Chris Carson plays the sport of,-0.466796875
+1505,15394,Patrick Corbin,baseball,-0.12476429,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Patrick Corbin plays the sport of",Fact: Patrick Corbin plays the sport of,-0.330078125
+1508,43,Geno Smith,football,-0.08765964,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Geno Smith plays the sport of",Fact: Geno Smith plays the sport of,-0.40625
+1509,874,Junior Seau,football,-0.06708199,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Junior Seau plays the sport of",Fact: Junior Seau plays the sport of,-0.5078125
+1513,424,Janoris Jenkins,football,-0.49159718,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Janoris Jenkins plays the sport of",Fact: Janoris Jenkins plays the sport of,-0.345703125
+1514,6891,Steve Blake,basketball,-0.2739752,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Steve Blake plays the sport of",Fact: Steve Blake plays the sport of,-0.48046875
+1515,59,Mark Ingram,football,-0.28250766,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mark Ingram plays the sport of",Fact: Mark Ingram plays the sport of,-0.373046875
+1525,487,Jack Del Rio,football,-0.15702929,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Jack Del Rio plays the sport of",Fact: Jack Del Rio plays the sport of,-1.7890625
+1527,5903,Ben Wallace,basketball,-0.1356402,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Ben Wallace plays the sport of",Fact: Ben Wallace plays the sport of,-1.109375
+1533,6248,Nicolas Batum,basketball,-0.048776723,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Nicolas Batum plays the sport of",Fact: Nicolas Batum plays the sport of,-0.55078125
+1534,670,Bill Cowher,football,-0.32443228,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Bill Cowher plays the sport of",Fact: Bill Cowher plays the sport of,-1.796875
+1537,1423,Mike Evans,football,-0.43111083,2,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Mike Evans plays the sport of",Fact: Mike Evans plays the sport of,-0.6484375
+1539,761,Julius Peppers,football,-0.110910386,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Julius Peppers plays the sport of",Fact: Julius Peppers plays the sport of,-0.5546875
+1546,962,Lavonte David,football,-0.266936,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Lavonte David plays the sport of",Fact: Lavonte David plays the sport of,-0.50390625
+1547,6379,Steve Kerr,basketball,-0.10787952,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Steve Kerr plays the sport of",Fact: Steve Kerr plays the sport of,-0.40625
+1548,15069,Michael Bourn,baseball,-0.2760215,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Michael Bourn plays the sport of",Fact: Michael Bourn plays the sport of,-0.416015625
+1550,7426,Derrick Allen,basketball,-0.6317681,3,1,14648,"Fact: Tiger Woods plays the sport of golf
+Fact: Derrick Allen plays the sport of",Fact: Derrick Allen plays the sport of,-1.453125
+1551,14233,Buck Showalter,baseball,-0.34013373,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Buck Showalter plays the sport of",Fact: Buck Showalter plays the sport of,-0.73828125
+1555,927,Champ Bailey,football,-0.49765414,3,2,5842,"Fact: Tiger Woods plays the sport of golf
+Fact: Champ Bailey plays the sport of",Fact: Champ Bailey plays the sport of,-0.330078125
+1564,16049,Wilson Betemit,baseball,-0.07202603,3,0,14623,"Fact: Tiger Woods plays the sport of golf
+Fact: Wilson Betemit plays the sport of",Fact: Wilson Betemit plays the sport of,-0.390625
