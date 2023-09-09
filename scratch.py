@@ -467,13 +467,15 @@ px.histogram(post, color=top_facts_df.sport.values, barmode="overlay", histnorm=
 px.histogram(pre, color=top_facts_df.sport.values, barmode="overlay", histnorm='percent', title=f"pre for L{layer}N{ni}").show()
 px.histogram(pre_linear, color=top_facts_df.sport.values, barmode="overlay", histnorm='percent', title=f"pre_linear for L{layer}N{ni}").show()
 # %%
+layer = 5
+ni = 625
 win = model.W_in[layer, :, ni]
 wgate = model.W_gate[layer, :, ni]
 wout = model.W_out[layer, ni, :]
 def cos(v, w):
     return v @ w.T / v.norm(dim=-1)[:, None] / w.norm(dim=-1)[None, :]
-labels = ['win', 'wgate', 'wout', 'baseball', 'basketball', 'football']
-x = torch.cat([win.float()[:, None].cpu(), wgate.float()[:, None].cpu(), wout.float()[:, None].cpu(), head_probe], dim=1).T
+labels = ['win', 'wgate', 'wout', 'baseball_cent', 'basketball_cent', 'football_cent', 'baseball', 'basketball', 'football', ]
+x = torch.cat([-win.float()[:, None].cpu(), wgate.float()[:, None].cpu(), -wout.float()[:, None].cpu(), head_probe, (model.W_V[15, 15] @ model.W_O[15, 15] @ W_U_sport).float().cpu()], dim=1).T
 imshow(cos(x, x), x=labels, y=labels, title=f"Key Cosine Sims for L{layer}N{ni}")
 # %%
 in_weights = torch.stack([win, wgate]).cpu().float()
@@ -506,4 +508,326 @@ for i in range(3):
     y = y.sort().values
     line([x.cumsum(-1)/x.sum(), y.cumsum(-1)/y.sum()])
 
+# %%
+layer = 5
+ni = 625
+val = 0.
+def ablate_neuron_hook(post, hook, subject_pos):
+    post[np.arange(len(subject_pos)), subject_pos, ni] = val
+    return post
+batch_size = 16
+logits_list = []
+for i in tqdm.trange(0, len(top_facts_df), batch_size):
+    tokens = athlete_tokens[i:i+batch_size]
+    subject_pos_temp = subject_index[i:i+batch_size]
+    hook = partial(ablate_neuron_hook, subject_pos=subject_pos_temp)
+    logits = model.run_with_hooks(tokens, fwd_hooks=[(utils.get_act_name("post", layer), hook)]).cpu()
+    logits_list.append(logits)
+abl_logits = torch.cat(logits_list)
+abl_log_probs = abl_logits.log_softmax(dim=-1)[np.arange(len(top_facts_df)), final_index, ][..., SPORT_TOKENS]
+abl_log_probs.shape
+# %%
+for i in range(3):
+    scatter(x=abl_log_probs[(top_facts_df.sport_index==i).values, i], y=sport_log_probs[(top_facts_df.sport_index==i).values, i], xaxis="Ablated log prob", yaxis='Baseline log prob', include_diag=True, hover=top_facts_df.query(f"sport_index=={i}").athlete.values)
+# %%
+i=0
+displacement = sport_log_probs[(top_facts_df.sport_index==i).values, i] - abl_log_probs[(top_facts_df.sport_index==i).values, i]
+scatter(x=sport_log_probs[(top_facts_df.sport_index==i).values, i], y=displacement)
+px.scatter(x=to_numpy(displacement), y=to_numpy(post[(top_facts_df.sport_index==0).values]), trendline='ols')
+# %%
+
+def generate_resample_ablate_indices():
+    sports = top_facts_df.sport_index.values
+    indices_by_sport = [np.arange(len(sports))[sports==i] for i in range(3)]
+    offset = np.random.randint(0, 2, len(sports))
+    new_sport = (sports + offset + 1) % 3
+    out = []
+    for i in range(len(sports)):
+        out.append(np.random.choice(indices_by_sport[new_sport[i]]))
+    return np.array(out)
+generate_resample_ablate_indices()
+
+# %%
+RANGE = np.arange(len(top_facts_df))
+
+def get_patching_metrics(abl_logits):
+    final_logits = abl_logits[RANGE, final_index, :]
+    final_log_probs = -final_logits.float().log_softmax(dim=-1)
+    sport_final_log_probs = final_log_probs[:, SPORT_TOKENS]
+    sport_loss = sport_final_log_probs[RANGE, top_facts_df.sport_index.values].mean()
+    baseball_loss = sport_final_log_probs[RANGE, top_facts_df.sport_index.values][(top_facts_df.sport_index==0).values].mean()
+    basketball_loss = sport_final_log_probs[RANGE, top_facts_df.sport_index.values][(top_facts_df.sport_index==1).values].mean()
+    football_loss = sport_final_log_probs[RANGE, top_facts_df.sport_index.values][(top_facts_df.sport_index==2).values].mean()
+    sport_acc = (sport_final_log_probs.argmin(-1) == torch.tensor(top_facts_df.sport_index.values).to(final_logits.device)).float().mean()
+    full_acc = (final_log_probs.argmin(-1) == SPORT_TOKENS[top_facts_df.sport_index.values]).float().mean()
+    kl_div = (all_log_probs.exp() * (all_log_probs + final_log_probs)).sum(-1).mean()
+    return {
+        "sport_loss": sport_loss.item(),
+        "sport_acc": sport_acc.item(),
+        "full_acc": full_acc.item(),
+        "kl_div": kl_div.item(),
+        "baseball_loss": baseball_loss.item(),
+        "basketball_loss": basketball_loss.item(),
+        "football_loss": football_loss.item(),
+    }
+pprint.pprint(get_patching_metrics(all_logits))
+pprint.pprint(get_patching_metrics(abl_logits))
+# %%
+
+records = []
+for layer in tqdm.trange(n_layers):
+
+    resample_indices = generate_resample_ablate_indices()
+    resampled_mlp_out = all_cache["mlp_out", layer][np.arange(len(top_facts_df)), subject_index, :].cuda()
+    resampled_mlp_out = resampled_mlp_out[resample_indices]
+
+    def resample_ablate_mlp_hook(mlp_out, hook, subject_pos, new_mlp_out):
+        mlp_out[np.arange(len(subject_pos)), subject_pos, :] = new_mlp_out
+        return mlp_out
+
+    batch_size = 16
+    logits_list = []
+    for i in range(0, len(top_facts_df), batch_size):
+        tokens = athlete_tokens[i:i+batch_size]
+        subject_pos_temp = subject_index[i:i+batch_size]
+        mlp_out_temp = resampled_mlp_out[i:i+batch_size]
+        hook = partial(resample_ablate_mlp_hook, subject_pos=subject_pos_temp, new_mlp_out=mlp_out_temp)
+        logits = model.run_with_hooks(tokens, fwd_hooks=[(utils.get_act_name("mlp_out", layer), hook)]).cpu()
+        logits_list.append(logits)
+    abl_logits = torch.cat(logits_list)
+    records.append(get_patching_metrics(abl_logits))
+    records[-1]["layer"] = layer
+    records[-1]["site"] = "mlp_out"
+temp_df = pd.DataFrame(records)
+px.line(temp_df)
+
+# %%
+records = []
+for start_layer in tqdm.trange(5):
+    for end_layer in tqdm.trange(start_layer+1, 6):
+
+        resample_indices = generate_resample_ablate_indices()
+        
+        start_original_mlp_out = all_cache["mlp_out", start_layer][np.arange(len(top_facts_df)), subject_index, :].cuda()
+        end_original_resid_mid = all_cache["resid_mid", start_layer][np.arange(len(top_facts_df)), subject_index, :].cuda()
+        start_resampled_mlp_out = start_original_mlp_out[resample_indices]
+        abl_resid_mid = end_original_resid_mid - start_original_mlp_out + start_resampled_mlp_out
+        abl_normalized = model.blocks[end_layer].ln2(abl_resid_mid)
+
+
+        def path_resample_ablate_mlp_hook(normalized, hook, subject_pos, new_normalized):
+            normalized[np.arange(len(subject_pos)), subject_pos, :] = new_normalized.float()
+            return normalized
+
+        batch_size = 16
+        logits_list = []
+        for i in range(0, len(top_facts_df), batch_size):
+            tokens = athlete_tokens[i:i+batch_size]
+            subject_pos_temp = subject_index[i:i+batch_size]
+            normalized_temp = abl_normalized[i:i+batch_size]
+            hook = partial(path_resample_ablate_mlp_hook, subject_pos=subject_pos_temp, new_normalized=normalized_temp)
+            logits = model.run_with_hooks(tokens, fwd_hooks=[(utils.get_act_name("normalized", end_layer, "ln2"), hook)]).cpu()
+            logits_list.append(logits)
+        abl_logits = torch.cat(logits_list)
+        records.append(get_patching_metrics(abl_logits))
+        records[-1]["label"] = f"L{start_layer}->L{end_layer}"
+temp_df = pd.DataFrame(records)
+px.line(temp_df, y=temp_df.columns[:-2], x="label")
+# %%
+records = []
+for start_layer in tqdm.trange(5):
+    for end_layer in tqdm.trange(start_layer+1, 6):
+
+        resample_indices = generate_resample_ablate_indices()
+        
+        start_original_mlp_out = all_cache["mlp_out", start_layer][np.arange(len(top_facts_df)), subject_index, :].cuda()
+        end_original_resid_mid = all_cache["resid_mid", start_layer][np.arange(len(top_facts_df)), subject_index, :].cuda()
+        start_resampled_mlp_out = start_original_mlp_out.mean(0, keepdim=True)
+        abl_resid_mid = end_original_resid_mid - start_original_mlp_out + start_resampled_mlp_out
+        abl_normalized = model.blocks[end_layer].ln2(abl_resid_mid)
+
+
+        def path_resample_ablate_mlp_hook(normalized, hook, subject_pos, new_normalized):
+            normalized[np.arange(len(subject_pos)), subject_pos, :] = new_normalized.float()
+            return normalized
+
+        batch_size = 16
+        logits_list = []
+        for i in range(0, len(top_facts_df), batch_size):
+            tokens = athlete_tokens[i:i+batch_size]
+            subject_pos_temp = subject_index[i:i+batch_size]
+            normalized_temp = abl_normalized[i:i+batch_size]
+            hook = partial(path_resample_ablate_mlp_hook, subject_pos=subject_pos_temp, new_normalized=normalized_temp)
+            logits = model.run_with_hooks(tokens, fwd_hooks=[(utils.get_act_name("normalized", end_layer, "ln2"), hook)]).cpu()
+            logits_list.append(logits)
+        abl_logits = torch.cat(logits_list)
+        records.append(get_patching_metrics(abl_logits))
+        records[-1]["label"] = f"L{start_layer}->L{end_layer}"
+temp_df = pd.DataFrame(records)
+px.line(temp_df, y=temp_df.columns[:-2], x="label")
+# %%
+records = [] 
+for start_layer in tqdm.trange(8):
+    for end_layer in tqdm.trange(8, 9):
+
+        resample_indices = generate_resample_ablate_indices()
+        
+        start_original_mlp_out = all_cache["mlp_out", start_layer][np.arange(len(top_facts_df)), subject_index, :].cuda()
+        end_original_resid_mid = all_cache["resid_mid", start_layer][np.arange(len(top_facts_df)), subject_index, :].cuda()
+        start_resampled_mlp_out = start_original_mlp_out[resample_indices]
+        abl_resid_mid = end_original_resid_mid - start_original_mlp_out + start_resampled_mlp_out
+        abl_normalized = model.blocks[end_layer].ln2(abl_resid_mid) @ model.W_in[end_layer]
+
+
+        def path_resample_ablate_mlp_hook(normalized, hook, subject_pos, new_normalized):
+            normalized[np.arange(len(subject_pos)), subject_pos, :] = new_normalized
+            return normalized
+
+        batch_size = 16
+        logits_list = []
+        for i in range(0, len(top_facts_df), batch_size):
+            tokens = athlete_tokens[i:i+batch_size]
+            subject_pos_temp = subject_index[i:i+batch_size]
+            normalized_temp = abl_normalized[i:i+batch_size]
+            hook = partial(path_resample_ablate_mlp_hook, subject_pos=subject_pos_temp, new_normalized=normalized_temp)
+            logits = model.run_with_hooks(tokens, fwd_hooks=[(utils.get_act_name("pre_linear", end_layer), hook)]).cpu()
+            logits_list.append(logits)
+        abl_logits = torch.cat(logits_list)
+        records.append(get_patching_metrics(abl_logits))
+        records[-1]["label"] = f"L{start_layer}->L{end_layer}"
+temp_df = pd.DataFrame(records)
+px.line(temp_df, y=temp_df.columns[:-1], x="label")
+# %%
+for site in ["post", "pre", "pre_linear"]:
+    l2_neurons = all_cache[site, 2][np.arange(len(top_facts_df)), subject_index, :].float()
+    l2_neurons.shape
+
+    above = []
+    below = []
+    for thresh in np.linspace(-4, 4, 201):
+        above.append((l2_neurons.flatten() >= thresh).float().mean().item())
+        below.append((l2_neurons.flatten() <= thresh).float().mean().item())
+    line([above, below], x=np.linspace(-4, 4, 201), line_labels=["above", "below"], title="CDF of L2 neuron activations for "+site)
+# %%
+subject_pos = all_cache["post", 2][np.arange(len(top_facts_df)), subject_index, :]
+histogram((subject_pos.abs()>0.05).float().mean(0), title="Sparsity per athlete")
+histogram((subject_pos.abs()>0.05).float().mean(1), title="Sparsity per neuron")
+# %%
+# s = "I climbed the pear tree and picked a pear. I climbed the apple tree and picked"
+# an_tokens = to_tokens(s)
+# an_logits, an_cache = model.run_with_cache(an_tokens)
+# A = to_single_token(" a")
+# AN = to_single_token(" an")
+# an_logits[0, -1, AN], an_logits[0, -1, A]
+# # %%
+# unembed_dir = model.W_U[:, AN] - model.W_U[:, A]
+# unembed_dir = unembed_dir / unembed_dir.norm(dim=-1, keepdim=True)
+# neuron_wdla = (model.W_out @ unembed_dir).float()
+# # histogram(neuron_wdla.T)
+# neuron_acts = an_cache.stack_activation("post")[:, 0, -1, :].float()
+# neuron_dla = neuron_acts * neuron_wdla
+# histogram(neuron_dla.T, marginal="box", barmode="overlay", title="DLA of neurons for 'an' vs 'a'")
+# # %%
+# layer = 30
+# ni = 10433
+# line([an_cache["post", layer][0, :, ni], an_cache["pre", layer][0, :, ni], an_cache["pre_linear", layer][0, :, ni]], line_labels=["post", "pre", "pre_linear"], x=nutils.process_tokens_index(to_str_tokens(s)))
+# x = torch.stack([
+#     model.W_out[layer, ni].float(),
+#     model.W_in[layer, :, ni].float(),
+#     model.W_gate[layer, :, ni].float(),
+#     model.W_U[:, AN].float(),
+#     model.W_U[:, A].float(),
+#     unembed_dir.float(),
+# ])
+# labels = [
+#     "W_out",
+#     "W_in",
+#     "W_gate",
+#     "W_U_AN",
+#     "W_U_A",
+#     "AN-A",
+# ]
+# imshow(cos(x, x), x=labels, y=labels)
+# %%
+neuron_l5n625_act = [None]
+def cache_l5n625(post, hook):
+    neuron_l5n625_act[0] = post[:, :, 625].detach().clone()
+    return
+model.add_perma_hook(utils.get_act_name("post", 5), cache_l5n625)
+
+records = [] 
+neuron_act_mega_list = []
+label_list = []
+for start_layer in tqdm.trange(5):
+    for end_layer in tqdm.trange(start_layer+1, 6):
+
+        resample_indices = generate_resample_ablate_indices()
+        
+        start_original_mlp_out = all_cache["mlp_out", start_layer][np.arange(len(top_facts_df)), subject_index, :].cuda()
+        end_original_resid_mid = all_cache["resid_mid", start_layer][np.arange(len(top_facts_df)), subject_index, :].cuda()
+        start_resampled_mlp_out = start_original_mlp_out[resample_indices]
+        abl_resid_mid = end_original_resid_mid - start_original_mlp_out + start_resampled_mlp_out
+        abl_normalized = model.blocks[end_layer].ln2(abl_resid_mid) @ model.W_in[end_layer]
+
+
+        def path_resample_ablate_mlp_hook(normalized, hook, subject_pos, new_normalized):
+            normalized[np.arange(len(subject_pos)), subject_pos, :] = new_normalized
+            return normalized
+
+        batch_size = 16
+        # logits_list = []
+        neuron_act_list = []
+        for i in range(0, len(top_facts_df), batch_size):
+            tokens = athlete_tokens[i:i+batch_size]
+            subject_pos_temp = subject_index[i:i+batch_size]
+            normalized_temp = abl_normalized[i:i+batch_size]
+            hook = partial(path_resample_ablate_mlp_hook, subject_pos=subject_pos_temp, new_normalized=normalized_temp)
+            _ = model.run_with_hooks(tokens, fwd_hooks=[(utils.get_act_name("pre_linear", end_layer), hook)], stop_at_layer=6)
+            neuron_act_list.append(neuron_l5n625_act[0])
+        #     logits_list.append(logits)
+        # abl_logits = torch.cat(logits_list)
+        neuron_acts = torch.cat(neuron_act_list)
+        neuron_act_mega_list.append(neuron_acts)
+        label_list.append(f"L{start_layer}->L{end_layer}")
+l5n625_all_neuron_acts = torch.stack(neuron_act_mega_list)
+l5n625_all_neuron_acts.shape
+# %%
+l5n625_all_neuron_acts_subj_baseball = l5n625_all_neuron_acts[:, RANGE, subject_index][:, (top_facts_df.sport_index==0).values]
+fig = line(l5n625_all_neuron_acts_subj_baseball.mean(1), x=label_list, return_fig=True)
+fig.add_hline(all_cache["post", 5][RANGE, subject_index, 625][(top_facts_df.sport_index==0).values].mean())
+fig.show()
+line(l5n625_all_neuron_acts_subj_baseball)
+# %%
+start_layer = 5
+end_layer = 6
+resample_indices = generate_resample_ablate_indices()
+        
+start_original_mlp_out = all_cache["mlp_out", start_layer][np.arange(len(top_facts_df)), subject_index, :].cuda()
+end_original_resid_mid = all_cache["resid_mid", start_layer][np.arange(len(top_facts_df)), subject_index, :].cuda()
+start_resampled_mlp_out = start_original_mlp_out[resample_indices]
+abl_resid_mid = end_original_resid_mid - start_original_mlp_out + start_resampled_mlp_out
+abl_normalized = model.blocks[end_layer].ln2(abl_resid_mid) @ model.W_in[end_layer]
+
+
+def path_resample_ablate_mlp_hook(normalized, hook, subject_pos, new_normalized):
+    normalized[np.arange(len(subject_pos)), subject_pos, :] = new_normalized
+    return normalized
+
+batch_size = 16
+# logits_list = []
+neuron_act_list = []
+for i in range(0, len(top_facts_df), batch_size):
+    tokens = athlete_tokens[i:i+batch_size]
+    subject_pos_temp = subject_index[i:i+batch_size]
+    normalized_temp = abl_normalized[i:i+batch_size]
+    hook = partial(path_resample_ablate_mlp_hook, subject_pos=subject_pos_temp, new_normalized=normalized_temp)
+    _ = model.run_with_hooks(tokens, fwd_hooks=[(utils.get_act_name("pre_linear", end_layer), hook)], stop_at_layer=7)
+    neuron_act_list.append(neuron_l5n625_act[0])
+#     logits_list.append(logits)
+# abl_logits = torch.cat(logits_list)
+neuron_acts = torch.cat(neuron_act_list)
+neuron_act_mega_list.append(neuron_acts)
+label_list.append(f"L{start_layer}->L{end_layer}")
+# %%
+line(l5n625_all_neuron_acts_subj_baseball - l5n625_all_neuron_acts_subj_baseball[-1], line_labels=label_list)
 # %%
